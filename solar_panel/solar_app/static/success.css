@@ -1,0 +1,290 @@
+body,
+html {
+    background-color: #050E13;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+main {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main2 {
+    background-color: #33A083;
+    color: #fff;
+    width: 85%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    border-radius: 50px;
+    margin-top: 3.5vh;
+    margin-left: 6.9vw;
+}
+
+.sunpac {
+    padding-left: 1vw;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.profile {
+    height: 3vw;
+    width: 3vw;
+    margin: 0.2vh -0.1vw;
+}
+
+.cart {
+    height: 3vw;
+    width: 3vw;
+    margin: 0.1vh 0.9vw;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-align: right;
+    margin-right: 1.2vw;
+}
+
+
+/* button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+} */
+
+.button {
+    padding: 0.5vw 1.2vw;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    background-color: #33A083;
+    color: #F6F6F6;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s, border-color 0.1s;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #33A083;
+    border-color: #fff;
+    /* Set border color on hover */
+}
+
+.nav2 {
+    display: flex;
+    gap: 5vw;
+    /* margin-right: 22vw; */
+    padding-right: 16vw;
+}
+
+.nav2 h4 {
+    font-size: 1vw;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* .nav2 h4 {
+/* gap: 7rem; */
+
+.icons img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    margin-left: 10vw;
+}
+
+.nav2 {
+    display: flex;
+    gap: 5vw;
+}
+
+.nav2 h4 {
+    font-size: 1vw;
+    color: #fff;
+}
+
+.nav2 h4 {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav2 h4:hover {
+    color: #fff;
+}
+
+.nav2 h4:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.nav2 h4::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #33A083;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav2 h4:hover::after {
+    width: 100%;
+}
+
+.nav2 {
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    color: #fff;
+}
+
+.nav2 h4 {
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.products .popup {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.products:hover .popup {
+    display: block;
+}
+
+.popup {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #33A083;
+}
+
+.popup li {
+    padding: 8px;
+    border-bottom: 1px solid #33A083;
+}
+
+.popup li:last-child {
+    border-bottom: none;
+}
+
+.popup li:hover {
+    background-color: #33A083;
+    color: #fff;
+}
+
+.popup li {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+span {
+    color: #33A083;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    width: 100%;
+    padding-top: 4vw;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    border: 1px solid #000;
+    background-color: #fff;
+    max-height: 65vw;
+    border-radius: 12px;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 5vw;
+}
+
+.card1 img {
+    max-width: 100%;
+    max-height: 30%;
+    min-height: 40%;
+    object-fit: cover;
+}
+
+.card1 .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card1 .price1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card1:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+a.generate-link {
+    all: unset;
+    display: inline-block;
+    padding: 0.6vw 1.4vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1vw;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.generate-link:hover {
+    background-color: white;
+    color: #050E13;
+    text-decoration: none;
+}

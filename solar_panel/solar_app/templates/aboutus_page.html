@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'aboutus_page.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="main2">
+                <img src="{% static 'logo/logo2.svg' %}" alt="" class ="sunpac" data-url="{% url 'home2' %}">
+            <div class="header">
+                <div class="nav2">
+                    <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                    <h4 class="products" data-url="{% url 'gridview' %}">Products
+                        {% comment %} <ul class="popup">
+                            <li>Solar Panel</li>
+                            <li>Inverters</li>
+                            <li>Solar Cooker</li>
+                            <li>Solar Heater</li>
+                        </ul> {% endcomment %}
+                    </h4>
+                    <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+                    <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+                </div>
+                    <button class="button" data-url="{% url 'insert2' %}">Lists</button>
+                    <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile" data-url="{% url 'profilepage' %}">
+                    <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}">
+                     
+            </div>
+        </div>
+        <div class="about">
+            <div class="video-container">
+                <video id="myVideo" autoplay muted loop>
+                    <source src="{% static 'logo/solarvi1.mp4' %}" type="video/mp4">
+                    <source src="{% static 'logo/solarvi1.webm' %}" type="video/webm">
+                </video>
+                <div class="video-text">
+                    <h1>About <span>Sunpac</span></h1>
+                    <p>Welcome to Sunpac, your one-stop shop for all your solar needs.<br>From panels to heaters, we've got it all. Join us in embracing a brighter, cleaner future.</p>
+                </div>
+            </div>
+            {% comment %} <div class="com1">
+                <h2>Know about sunpac</h2>
+            </div>
+            <div class="gif">
+                <div class="gifleft">
+                    <img src="{% static 'logo/gif3.gif' %}" alt="">
+                </div>
+                <div class="gifcontent">
+                    <h2>Innovative solar<br>
+                        Solution For<br>
+                        Your<span> Home</span></h2>
+                </div>
+            </div> {% endcomment %}
+            <div class="paragraph3">
+                <h2>What We Offer?</h2>
+                <div class="conn">
+                    <div class="card">
+                        <h2>
+                        <img src="{% static 'logo/child.svg' %}" alt="">
+                        </h2>
+                        <h3>Extensive Product<br>
+                            Selection</h3>
+                    </div>
+                
+                     <div class="card2">
+                        <h2>
+                        <img src="{% static 'logo/men2.svg' %}" alt="">
+                         </h2>
+                        <h3>Trusted Sellers &<br>
+                            Suppliers</h3>
+                    </div>
+        
+                    <div class="card3">
+                        <h2>
+                        <img src="{% static 'logo/men3.svg' %}" alt="">
+                        </h2>
+                        <h3>Seamless Buying<br>
+                            Experience</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="com">
+                <h2>Know Our Company</h2>
+            </div>
+            <div class="paragraph1">
+                <img src="{% static 'logo/aboutus.png' %}" alt="">
+                <h1>About Sunpac</h1>
+                <p>Welcome to Sunpac, your ultimate destination for all things solar!At Sunpac,we're passionate<br>about harnessing the power of the sun to create a sustainable future for generations to<br>come. Our platform serves as a comprehensive marketplace where solar enthusiasts,<br>homeowners, businesses, and industry professionals converge to explore,<br>buy, sell, and list a wide range of solar products and services.</p>
+            </div>
+            <div class="com">
+                <h2>Know Our Mission</h2>
+            </div>
+            <div class="paragraph2">
+                <img src="{% static 'logo/men4.svg' %}" alt="">
+                <h2>Our Mission</h2>
+                <p>Our mission at Sunpac is to accelerate the global adoption of solar energy by providing a<br>seamlessand empowering online platform for individuals and businesses to discover, invest<br>in, and contribute to solar solutions. We believe that by making solar technology<br>accessible, affordable, and convenient, we can drive positive environmental<br>impact and energy independence worldwide.</p>
+            </div>
+            <div class="com">
+                <h2>Know Our Sustainability</h2>
+            </div>
+            <div class="paragraph_4">
+                <img src="{% static 'logo/men5.svg' %}" alt="">
+                <h2>Our Commitment to Sustainability</h2>
+                <p>At Sunpac, sustainability isn't just a goal-it's our guiding principle. We are committed to minimizing<br>our environmental footprint by promoting renewable energy adoption, reducing<br>waste, and supporting eco-friendly practices throughout our operations.</p>
+            </div>
+            <div class="com">
+                <h2>Ready for Get</h2>
+            </div>
+            <div class="paragraph_5">
+                <img src="{% static 'logo/men6.svg' %}" alt="">
+                <h2>Get in Touch</h2>
+                <p>Ready to embark on your solar journey? Explore Sunpac today and discover the endless possibilities<br>of solar energy. Have questions or feedback? We'd love to hear from you! Contact<br>our team to learn more about our platform, products, and services.</p>
+            </div>
+            <div class="title2">
+                <h1>Warranty</h1>
+                <h2>25-year performance guarantee</h2>
+           </div>
+        
+           <div class="logo2">
+            <img src="{% static 'logo/logo2.svg' %}" alt="">
+           </div>
+        
+           <div class="title3">
+            <h1>Solar Power Your Home</h1>
+            <button class="order-btn" data-url="{% url 'gridview' %}">Order now</button>
+           </div>
+        
+           <div class="footer">
+            <div class="nav3">
+                <h4>Sunpac @ 2023</h4>
+                <h4 class="nav-link" data-url="{% url 'privacy' %}">Privacy & legal</h4>
+                <h4 class="nav-link" data-url="{% url 'contactus' %}">contact</h4>
+                <h4 class="nav-link" data-url="{% url 'blog_page' %}">guide</h4>
+                <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About</h4>
+            </div>
+           </div>   
+           
+           <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hlinks = document.querySelectorAll(".products,.button, .nav-link, .nav-link, .sunpac, .profile, .cart, .order-btn");
+        
+        
+        
+                hlinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        const url = this.getAttribute('data-url');
+                        window.location.href = url
+        
+                        this.classList.add('clicked');
+        
+                        setTimeout(() => {
+                            this.classList.remove('clicked');
+                        }, 300);
+                    })
+                });
+             });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

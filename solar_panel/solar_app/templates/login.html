@@ -1,0 +1,75 @@
+<!-- login.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+      
+    <img src="{% static 'logo/logo2.svg' %}" alt="Your Image Alt Text">
+  
+        
+       
+        {% comment %} <form method="POST">
+            {% csrf_token %} {% endcomment %}
+
+            <div class="container">
+                <div class="title">Login</div>
+                <div class="content">
+                  <form method='POST' action="">
+                    {% csrf_token %}
+                     <div class="user-details">
+                      <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                      </div>
+                    </div>
+                    {% csrf_token %}
+                    {% if cus_msg %}
+                       {% comment %} {% for message in cus_msg %} {% endcomment %}
+                          <div class="alert alert-danger" role="alert">
+                            {{ cus_msg }}
+                        {% comment %} {% endfor %} {% endcomment %}
+                      </div>
+                    {% endif %}
+                </div>
+                <div class="button">
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="links">
+                  <h4 class="signup" data-url="{% url 'signup' %}">Create Account</h4>
+                    {% comment %} <a href="{% url 'signup' %}">Sign Up</a> {% endcomment %}
+                </div>
+            </div>
+             
+        </form>  
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const hlinks = document.querySelectorAll(".signup ,.button ,.cart, .profile, .nav-link, .nav-link,.order-btn2, .order-btn, .solar_panel, .inveter, .solar_heater, .solar_cooker");
+  
+  
+  
+          hlinks.forEach(link => {
+              link.addEventListener("click", function () {
+                  const url = this.getAttribute('data-url');
+                  window.location.href = url
+  
+                  this.classList.add('clicked');
+  
+                  setTimeout(() => {
+                      this.classList.remove('clicked');
+                  }, 300);
+              })
+          });
+       });
+      </script>  
+</body>
+</html>

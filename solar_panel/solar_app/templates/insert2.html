@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'insert2.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+                <img src="{% static 'logo/logo2.svg' %}" alt="" class ="sunpac" data-url="{% url 'home2' %}">
+            <div class="header">
+                <div class="nav2">
+                    <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                    <h4 class="products" data-url="{% url 'gridview' %}">Products
+                        {% comment %} <ul class="popup">
+                            <li>Solar Panel</li>
+                            <li>Inverters</li>
+                            <li>Solar Cooker</li>
+                            <li>Solar Heater</li>
+                        </ul> {% endcomment %}
+                    </h4>
+                    <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+                    <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+                </div>
+                    <button class="button" data-url="/insert2/">Lists</button>
+                    <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile" data-url="{% url 'profilepage' %}">
+                    <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}">
+                     
+            </div>
+        </div>
+
+    <div class="ractangle">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="left">
+                <div class="first">
+                    <h2>Add Your Product Details</h2>
+                    <div class="file-upload">
+                        <h2>Choose Your Photo here</h2>
+                        <input type="file" name="pimg" accept="image/*" required id="id_pimg">
+                    </div>
+                    <div class="user1">
+                        <h2>Add Your Solar Product Details</h2>
+                        <div class="con1">
+                            <div class="left2">
+                                <h3>Price</h3>
+                                <input type="number" name="price" value="" min="-9223372036854775808" max="9223372036854775807" placeholder="amount" required id="id_price">
+                            </div>
+                            <div class="right2">
+                                <h3>Wattage</h3>
+                                <input type="text" name="wattage" maxlength="50" id="id_wattage" placeholder="wattage">
+                            </div>
+                        </div>
+                        <div class="con3">
+                            <div class="left3">
+                                <h3>Voltage</h3>
+                                <input type="text" name="voltage" maxlength="50" id="id_voltage" placeholder="voltage">
+                            </div>
+                            <div class="right3">
+                                <h3>Warrenty</h3>
+                                <input type="text" name="warrenty" maxlength="250" id="id_warrenty" placeholder="warrenty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Title</h3>
+                        <input type="text" name="title" maxlength="250" id="id_title" placeholder="title of product">
+                    </div>
+                    <div class="description1">
+                        <h3>Description</h3>
+                        <textarea name="description1" cols="40" rows="10" required id="id_description1">No description provided.</textarea>
+                    </div>
+                    <div class="productname">
+                        <h3>Product Name</h3>
+                        <div class="radio-container">
+                            <label><input type="radio" name="product_name" id="id_solar_panel" value="1"> Solar Panel</label>
+                            <label><input type="radio" name="product_name" id="id_solar_heater" value="2"> Solar Heater</label>
+                            <label><input type="radio" name="product_name" id="id_inverter" value="3"> Inverter</label>
+                            <label><input type="radio" name="product_name" id="id_solar_cooker" value="4"> Solar Cooker</label>
+                        </div>
+                    </div>
+                    <div class="productbrand">
+                        <h3>Product Brand</h3>
+                        <div class="radio-container1">
+                            <label><input type="radio" id="id_luminous" name="product_brand" value="5"> luminous</label>
+                            <label><input type="radio" id="id_loom" name="product_brand" value="6"> loom</label>
+                            <label><input type="radio" id="id_hi_mo" name="product_brand" value="7"> hi-mo</label>
+                        </div>
+                    </div>    
+                    <div class="Discount">
+                        <h3>Discount Product</h3>
+                        <div class="radio-container3">
+                            <label><input type="radio" id="id_discount_10" name="discount" value="8"> 10 %</label>
+                            <label><input type="radio" id="id_discount_20" name="discount" value="9"> 20 %</label>
+                            <label><input type="radio" id="id_discount_30" name="discount" value="10"> 30 %</label>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <h2>Your Contact Details</h2>
+                        <div class="con">
+                            <div class="left1">
+                                <h3>First Name</h3>
+                                <input type="text" name="first_name" maxlength="255" id="id_first_name" placeholder="first name">
+                            </div>    
+                            <div class="right1">
+                                <h3>Last Name</h3>
+                                <input type="text" name="last_name" maxlength="255" id="id_last_name" placeholder="last name">
+                            </div>
+                        </div>
+                        <div class="con2">
+                            <div class="left2">
+                            <h3>Email</h3>
+                                <input type="email" name="email" maxlength="255" id="id_email" placeholder="email">
+                            </div>
+                            <div class="right2">
+                                <h3>Phone</h3>
+                                <input type="number" placeholder="+91 9090909090" name="phone" id="phone" placeholder="phone">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="div1">
+                        <div class="discription">
+                            <h2>Write Description Of Product</h2>
+                            <textarea name="description" cols="40" rows="10" required id="id_description">No description provided.</textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="order-btn">Submit</button> 
+                    {% comment %} <button class="order-btn3">Show Product</button> {% endcomment %}
+                </div>
+            </div>
+        </form>
+            <div class="right"> 
+                <img class="image" src="{% static 'logo/insertimage.svg' %}" alt="kkkk"> 
+            </div>
+        
+    </div>
+
+       
+    </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hlinks = document.querySelectorAll(".sunpac,.nav-link, .products ,.nav-link, .profile, .btn-list, .cart");
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+    
+                    this.classList.add('clicked');
+    
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+         });
+        
+        </script>
+</body>
+</html>

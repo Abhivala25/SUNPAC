@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUNPAC</title>
+    <link rel="stylesheet" href="{% static 'generate_invoice.css' %}">
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <h1>SUNPAC</h1>
+        </div>
+        <div class="invoice-meta">
+            <p><strong>Invoice ID:</strong> {{ invoice_id }}</p>
+            <p><strong>Date:</strong> {{ current_date }}</p>
+            <p><strong>Time:</strong> {{ current_time }}</p>
+        </div>
+        <hr>
+        <div class="user-info">
+            <h3>Name: {{ user.name }}</h3>
+            <h3>Phone: {{ user.phone_number }}</h3>
+            <h3>City: {{ user.city }}</h3>
+            <h3>Address: {{ user.address }}</h3>
+        </div>
+        <hr>
+        <div class="product-info">
+            <img src="{{ product.pimg.url }}" alt="{{ product.title }}" class="invoice-img">
+            <div>
+                <p><strong>{{ product.title }}</strong></p>
+                <p>Original Price: ₹{{ original_price }}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="price-breakdown">
+            <p><strong>GSTIN:</strong> {{ gst_number }}</p>
+            {% if discount_rate %}
+            <p><strong>Discount ({{ discount_rate }}%):</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹{{ discount_amount|floatformat:2 }}</p>
+            <p><strong>Price after discount:</strong>&nbsp;&nbsp; ₹{{ discounted_price|floatformat:2 }}</p>
+            {% else %}
+            <p><strong>No Discount Applied</strong></p>
+            <p><strong>Discounted Price:</strong> ₹{{ discounted_price|floatformat:2 }}</p>
+            {% endif %}
+            <p><strong>GST ({{ gst_rate }}%):</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹{{ gst_amount|floatformat:2 }}</p>
+            <br>
+            <div class="invoice-total">
+                <strong>Total: ₹{{ final_price|floatformat:2 }}</strong>
+            </div>
+        </div>
+
+
+
+        <hr>
+        <div class="invoice-description">
+            <p>Thank you for purchasing <strong>{{ product.title }}</strong>. Your product will be delivered within <strong>7 days</strong>.</p>
+            <p>We appreciate your business and hope you enjoy your purchase!</p>
+        </div>
+        <button onclick="window.print()">Print Invoice</button>
+    </div>
+</body>
+</html>

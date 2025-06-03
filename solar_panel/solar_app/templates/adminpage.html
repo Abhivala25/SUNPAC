@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'adminpage.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="main">
+   <div class="leftt">
+        <div class="button">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile">
+            <input type="submit" value="Insert product">
+            <a href="/admin_user/"><input type="submit" value="User Records"></a>
+            <a href="/admin_category/"><input type="submit" value="Product Records"></a>
+            <a href="/admin_invoice/"><input type="submit" value="Invoice Records" /></a>
+        </div>
+   </div>
+   <div class="rightt">
+    <div class="ractangle">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="left">
+                <div class="first">
+                    <h2>Add Your Product Details</h2>
+                    <div class="file-upload">
+                        <h2>Choose Your Photo here</h2>
+                        <input type="file" name="pimg" accept="image/*" required id="id_pimg">
+                    </div>
+                    <div class="user1">
+                        <h2>Add Your Solar Product Details</h2>
+                        <div class="con1">
+                            <div class="left2">
+                                <h3>Price</h3>
+                                <input type="number" name="price" required placeholder="amount" id="id_price">
+                            </div>
+                            <div class="right2">
+                                <h3>Wattage</h3>
+                                <input type="text" name="wattage" id="id_wattage" placeholder="wattage">
+                            </div>
+                        </div>
+                        <div class="con3">
+                            <div class="left3">
+                                <h3>Voltage</h3>
+                                <input type="text" name="voltage" id="id_voltage" placeholder="voltage">
+                            </div>
+                            <div class="right3">
+                                <h3>Warrenty</h3>
+                                <input type="text" name="warrenty" id="id_warrenty" placeholder="warrenty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Title</h3>
+                        <input type="text" name="title" id="id_title" placeholder="title of product">
+                    </div>
+                    <div class="description1">
+                        <h3>Description</h3>
+                        <textarea name="description1" required id="id_description1">No description provided.</textarea>
+                    </div>
+                    <div class="productname">
+                        <h3>Product Name</h3>
+                        <div class="radio-container">
+                            <label><input type="radio" name="product_name" value="1"> Solar Panel</label>
+                            <label><input type="radio" name="product_name" value="2"> Solar Heater</label>
+                            <label><input type="radio" name="product_name" value="3"> Inverter</label>
+                            <label><input type="radio" name="product_name" value="4"> Solar Cooker</label>
+                        </div>
+                    </div>
+                    <div class="productbrand">
+                        <h3>Product Brand</h3>
+                        <div class="radio-container1">
+                            <label><input type="radio" name="product_brand" value="5"> luminous</label>
+                            <label><input type="radio" name="product_brand" value="6"> loom</label>
+                            <label><input type="radio" name="product_brand" value="7"> hi-mo</label>
+                        </div>
+                    </div>    
+                    <div class="Discount">
+                        <h3>Discount Product</h3>
+                        <div class="radio-container3">
+                            <label><input type="radio" name="discount" value="8"> 10 %</label>
+                            <label><input type="radio" name="discount" value="9"> 20 %</label>
+                            <label><input type="radio" name="discount" value="10"> 30 %</label>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <h2>Your Contact Details</h2>
+                        <div class="con">
+                            <div class="left1">
+                                <h3>First Name</h3>
+                                <input type="text" name="first_name" id="id_first_name" placeholder="first name">
+                            </div>    
+                            <div class="right1">
+                                <h3>Last Name</h3>
+                                <input type="text" name="last_name" id="id_last_name" placeholder="last name">
+                            </div>
+                        </div>
+                        <div class="con2">
+                            <div class="left2">
+                                <h3>Email</h3>
+                                <input type="email" name="email" id="id_email" placeholder="email">
+                            </div>
+                            <div class="right2">
+                                <h3>Phone</h3>
+                                <input type="number" name="phone" id="phone" placeholder="phone">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="div1">
+                        <div class="discription">
+                            <h2>Write Description Of Product</h2>
+                            <textarea name="description" required id="id_description">No description provided.</textarea>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="order-btn">Submit</button> 
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    <!-- User Records Table -->
+    <div class="userr">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Password</th>
+                    <th>City</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+               <form method='POST' action="{% url 'delete_user' %}">
+                    {% csrf_token %}
+                <tr>
+                    <input type="hidden" name="uid" value="{{ user.id }}">
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.phone_number }}</td>
+                    <td>{{ user.password }}</td>
+                    <td>{{ user.city }}</td>
+                    <td>{{ user.address }}</td>
+                    <td><button name="dlt" type="submit">Delete</button></td>
+                    <td><button name="upt" type="submit">Update</button></td>
+                </tr>
+               </form>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Product Records Table -->
+    <div class="category">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Wattage</th>
+                    <th>Voltage</th>
+                    <th>Warranty</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Solar Panel</th>
+                    <th>Solar Heater</th>
+                    <th>Inverter</th>
+                    <th>Solar Cooker</th>
+                    <th>Luminous</th>
+                    <th>Loom</th>
+                    <th>Hi-Mo</th>
+                    <th>Discount 10%</th>
+                    <th>Discount 20%</th>
+                    <th>Discount 30%</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in category_list %}
+                <form method='POST' action="{% url 'delete_category' %}">
+                        {% csrf_token %}
+                    <tr>
+                        <input type="hidden" name="pid" value="{{ item.id }}">
+                        <td><img src="{{ item.pimg.url }}" alt="Product Image" width="100"></td>
+                        <td>{{ item.price }}</td>
+                        <td>{{ item.wattage }}</td>
+                        <td>{{ item.voltage }}</td>
+                        <td>{{ item.warrenty }}</td>
+                        <td>{{ item.title }}</td>
+                        <td>{{ item.description1 }}</td>
+                        <td>{{ item.solar_panel }}</td>
+                        <td>{{ item.solar_heater }}</td>
+                        <td>{{ item.inverter }}</td>
+                        <td>{{ item.solar_cooker }}</td>
+                        <td>{{ item.luminous }}</td>
+                        <td>{{ item.loom }}</td>
+                        <td>{{ item.hi_mo }}</td>
+                        <td>{{ item.discount_10 }}</td>
+                        <td>{{ item.discount_20 }}</td>
+                        <td>{{ item.discount_30 }}</td>
+                        <td>{{ item.first_name }}</td>
+                        <td>{{ item.last_name }}</td>
+                        <td>{{ item.email }}</td>
+                        <td>{{ item.phone }}</td>
+                        <td>{{ item.description }}</td>
+                        <td><button name="btn" type="submit">Delete</button></td>
+                        <td><button name="upt" type="submit">Update</button></td>
+                    </tr>
+                </form>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Invoice Records Section -->
+    {% comment %} <div class="invoice">
+        
+         <form method="POST" action="{% url 'reset_invoice' %}">
+            {% csrf_token %}
+            {% comment %} <button type="submit" style="margin-bottom: 10px;">Reset All Invoices</button> 
+        </form> 
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Payment Mode</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for invoice in invoice_list %}
+                <tr>
+                    <td>{{ invoice.id }}</td>
+                    <td>{{ invoice.name }}</td>
+                    <td>{{ invoice.email }}</td>
+                    <td>{{ invoice.address }}</td>
+                    <td>{{ invoice.phone }}</td>
+                    <td>{{ invoice.payment_mode }}</td>
+                    <td>{{ invoice.amount }}</td>
+                    <td>{{ invoice.date }}</td>
+                    <td>{{ invoice.time }}</td>
+                    <td>
+                        <form method="POST" action="{% url 'delete_invoice' %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="invoice_id" value="{{ invoice.id }}">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div> {% endcomment %}
+
+   </div>
+  </div>
+  
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll(".nav-link, .nav-link, .profile, .cart .user11");
+        hlinks.forEach(link => {
+            link.addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.location.href = url
+
+                this.classList.add('clicked');
+
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            })
+        });
+     });
+</script>
+
+</body>
+</html>

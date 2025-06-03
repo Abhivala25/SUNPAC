@@ -1,0 +1,1252 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "solar_app.views",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "solar_app.views",
+        "description": "solar_app.views",
+        "detail": "solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "solar_app.views",
+        "description": "solar_app.views",
+        "isExtraImport": true,
+        "detail": "solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "twilio.rest",
+        "description": "twilio.rest",
+        "isExtraImport": true,
+        "detail": "twilio.rest",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "env.Scripts.activate_this",
+        "description": "env.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.migrations.0001_initial",
+        "description": "solar_panel.solar_app.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('owner_id', models.IntegerField(default=0)),\n                ('id', models.AutoField(primary_key=True, serialize=False)),",
+        "detail": "solar_panel.solar_app.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.migrations.0002_alter_invoice_arrival_time",
+        "description": "solar_panel.solar_app.migrations.0002_alter_invoice_arrival_time",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('solar_app', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='invoice',\n            name='arrival_time',\n            field=models.CharField(max_length=100, null=True),\n        ),",
+        "detail": "solar_panel.solar_app.migrations.0002_alter_invoice_arrival_time",
+        "documentation": {}
+    },
+    {
+        "label": "SolarAppConfig",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.apps",
+        "description": "solar_panel.solar_app.apps",
+        "peekOfCode": "class SolarAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'solar_app'",
+        "detail": "solar_panel.solar_app.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryForm",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.forms",
+        "description": "solar_panel.solar_app.forms",
+        "peekOfCode": "class CategoryForm(forms.ModelForm):\n    class Meta:\n        model = Category\n        fields = ['pimg', 'price', 'wattage', 'voltage', 'warrenty', 'title', 'description1', 'solar_panel', 'solar_heater', 'inverter', 'solar_cooker', 'luminous', 'loom', 'hi_mo', 'discount_10', 'discount_20', 'discount_30', 'first_name', 'last_name', 'email', 'phone', 'description']",
+        "detail": "solar_panel.solar_app.forms",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.models",
+        "description": "solar_panel.solar_app.models",
+        "peekOfCode": "class User(models.Model):\n    id = models.AutoField(primary_key=\"true\")\n    name = models.CharField(max_length=30)\n    email =  models.CharField(max_length=50)\n    phone_number = models.BigIntegerField(max_length=10, default=\"9090909090\")  # Changed to CharField for phone numbers\n    password = models.CharField(max_length=10, blank=True, null=True)\n    city = models.CharField(max_length=15, default='')  # Provided default value for city\n    address = models.CharField(max_length=100, default='')\n    is_admin = models.BooleanField(default=False)\nclass Category(models.Model):",
+        "detail": "solar_panel.solar_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.models",
+        "description": "solar_panel.solar_app.models",
+        "peekOfCode": "class Category(models.Model):\n    owner_id = models.IntegerField(default=0)\n    id = models.AutoField(primary_key=\"true\")\n    pimg = models.ImageField(upload_to='media/')\n    price = models.BigIntegerField(default=0)\n    wattage = models.CharField(max_length=50, blank=True)\n    voltage = models.CharField(max_length=50, blank=True)\n    warrenty = models.CharField(max_length=250,blank=True)\n    title = models.CharField(max_length=250,blank=True)\n    description1 = models.TextField(default='No description provided.')",
+        "detail": "solar_panel.solar_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Contact",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.models",
+        "description": "solar_panel.solar_app.models",
+        "peekOfCode": "class Contact(models.Model):\n    id = models.AutoField(primary_key=\"true\")\n    name = models.CharField(max_length=30)\n    email =  models.CharField(max_length=50)\n    phone_number = models.BigIntegerField(max_length=10, default=\"9090909090\")  # Changed to CharField for phone numbers\n    city = models.CharField(max_length=15, default='')  # Provided default value for city\n    description1 = models.TextField(default='No description provided.')\nclass Invoice(models.Model):\n    invoice_id = models.CharField(max_length=20, unique=True)\n    date = models.DateField()",
+        "detail": "solar_panel.solar_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Invoice",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.models",
+        "description": "solar_panel.solar_app.models",
+        "peekOfCode": "class Invoice(models.Model):\n    invoice_id = models.CharField(max_length=20, unique=True)\n    date = models.DateField()\n    time = models.TimeField()\n    name = models.CharField(max_length=100)\n    phone = models.CharField(max_length=15)\n    city = models.CharField(max_length=100)\n    address = models.TextField()\n    title = models.CharField(max_length=200)\n    price = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "solar_panel.solar_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "NewCategoryView",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "class NewCategoryView(CreateView):\n    model = Category  \n    form_class = CategoryForm\n    template_name = 'insert2.html' \n    success_url = reverse_lazy('home2')\nclass insert2(CreateView):\n    model = Category\n    fields =  ['pimg', 'price', 'wattage', 'voltage', 'warrenty', 'title', 'description1', 'solar_panel', 'solar_heater', 'inverter', 'solar_cooker', 'luminous', 'loom', 'hi_mo', 'discount_10', 'discount_20', 'discount_30', 'first_name', 'last_name', 'email', 'phone', 'description']\n    template_name = name='insert2.html'\n    success_url = reverse_lazy('insert2')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "insert2",
+        "kind": 6,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "class insert2(CreateView):\n    model = Category\n    fields =  ['pimg', 'price', 'wattage', 'voltage', 'warrenty', 'title', 'description1', 'solar_panel', 'solar_heater', 'inverter', 'solar_cooker', 'luminous', 'loom', 'hi_mo', 'discount_10', 'discount_20', 'discount_30', 'first_name', 'last_name', 'email', 'phone', 'description']\n    template_name = name='insert2.html'\n    success_url = reverse_lazy('insert2')\n    def form_valid(self, form):\n        if 'pimg' in self.request.FILES:\n            form.instance.pimg = self.request.FILES['pimg']\n        product_name = self.request.POST.get('product_name')\n        if product_name:",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "verify_otp_sms",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def verify_otp_sms(phone_number, entered_otp):\n    account_sid = \"AC886c80da9d760a7a329f19fbb71576a8\"\n    auth_token = \"fe3bba794e8b0d2439f8a465cd83ce04\"\n    verify_sid = \"VA820e04041df502e0171faf4d8f1f00ee\"\n    client = Client(account_sid, auth_token)\n    try:\n        verification_check = client.verify.v2.services(verify_sid) \\\n            .verification_checks \\\n            .create(to=phone_number, code=entered_otp)\n        return verification_check.status",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_sms",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def send_otp_sms(phone_number):\n    account_sid = \"AC886c80da9d760a7a329f19fbb71576a8\"\n    auth_token = \"fe3bba794e8b0d2439f8a465cd83ce04\"\n    verify_sid = \"VA820e04041df502e0171faf4d8f1f00ee\"\n    twilio_phone_number = \"+17603645757\"\n    client = Client(account_sid, auth_token)\n    verification = client.verify.v2.services(verify_sid) \\\n      .verifications \\\n      .create(to=phone_number, channel=\"sms\")\n    print(verification.status)",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def login(request):\n    if request.method == 'POST':\n        email = request.POST.get('email')\n        password = request.POST.get('password')\n        if not email or not password:\n            cus_msg = '~ Incomplete Form '\n            return render(request, \"login.html\", {'cus_msg': cus_msg})\n        try:\n            user = User.objects.get(email=email)\n        except User.DoesNotExist:",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "custom_login_required",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def custom_login_required(view_func):\n    def _wrapped_view(request, *args, **kwargs):\n        if not request.session.get('is_authenticated', False):\n            return redirect('login') \n        return view_func(request, *args, **kwargs)\n    return _wrapped_view\ndef logout(request):\n    request.session['is_authenticated'] = False\n    return redirect('home')\n# def login(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def logout(request):\n    request.session['is_authenticated'] = False\n    return redirect('home')\n# def login(request):\n#     if request.method == 'POST':\n            # Get form data\n        # name = request.POST.get('name', '')\n        # uemail = request.POST.get('email')\n        # upassword = request.POST.get('password')\n        # user1 = User.objects.filter(email=uemail).first()",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "generate_otp",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def generate_otp():\n        return str(random.randint(100000, 999999))\ndef send_otp_email(email, otp):\n    subject = 'OTP Verification'\n    message = f'Your OTP for registration is: {otp}'\n    from_email = 'abhivala55@gmail.com'\n    recipient_list = [email]\n    send_mail(subject, message, from_email, recipient_list)\n@csrf_exempt\ndef signup(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_email",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def send_otp_email(email, otp):\n    subject = 'OTP Verification'\n    message = f'Your OTP for registration is: {otp}'\n    from_email = 'abhivala55@gmail.com'\n    recipient_list = [email]\n    send_mail(subject, message, from_email, recipient_list)\n@csrf_exempt\ndef signup(request):\n    if request.method == 'POST':\n            # Get form data",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def signup(request):\n    if request.method == 'POST':\n            # Get form data\n        # name = request.POST.get('name', '')\n        name = request.POST.get('name', '')\n        email = request.POST.get('email')\n        password = request.POST.get('password')\n        phone_number = request.POST.get('phone_number')\n        city = request.POST.get('city')\n        address = request.POST.get('address')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def home(request):\n    return render(request, 'home.html')\ndef home2(request):\n    return render(request, 'home2.html')\ndef more(request):\n    return render(request, 'more.html')\ndef moresolar(request):\n    return render(request, 'moresolar.html')\ndef morebattery(request):\n    return render(request, 'morebattery.html')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "home2",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def home2(request):\n    return render(request, 'home2.html')\ndef more(request):\n    return render(request, 'more.html')\ndef moresolar(request):\n    return render(request, 'moresolar.html')\ndef morebattery(request):\n    return render(request, 'morebattery.html')\ndef morebulb(request):\n    return render(request, 'morebulb.html')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "more",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def more(request):\n    return render(request, 'more.html')\ndef moresolar(request):\n    return render(request, 'moresolar.html')\ndef morebattery(request):\n    return render(request, 'morebattery.html')\ndef morebulb(request):\n    return render(request, 'morebulb.html')\ndef insert(request):\n    return render(request, 'insert.html')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "moresolar",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def moresolar(request):\n    return render(request, 'moresolar.html')\ndef morebattery(request):\n    return render(request, 'morebattery.html')\ndef morebulb(request):\n    return render(request, 'morebulb.html')\ndef insert(request):\n    return render(request, 'insert.html')\n@csrf_exempt\ndef gridview(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "morebattery",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def morebattery(request):\n    return render(request, 'morebattery.html')\ndef morebulb(request):\n    return render(request, 'morebulb.html')\ndef insert(request):\n    return render(request, 'insert.html')\n@csrf_exempt\ndef gridview(request):\n    query = request.GET.get('q')\n    categories = Category.objects.all()",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "morebulb",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def morebulb(request):\n    return render(request, 'morebulb.html')\ndef insert(request):\n    return render(request, 'insert.html')\n@csrf_exempt\ndef gridview(request):\n    query = request.GET.get('q')\n    categories = Category.objects.all()\n    if query:\n        categories = categories.filter(Q(title__icontains=query))",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "insert",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def insert(request):\n    return render(request, 'insert.html')\n@csrf_exempt\ndef gridview(request):\n    query = request.GET.get('q')\n    categories = Category.objects.all()\n    if query:\n        categories = categories.filter(Q(title__icontains=query))\n        # categories = Category.objects.all()\n    price_filter = request.GET.get('price-group')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "gridview",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def gridview(request):\n    query = request.GET.get('q')\n    categories = Category.objects.all()\n    if query:\n        categories = categories.filter(Q(title__icontains=query))\n        # categories = Category.objects.all()\n    price_filter = request.GET.get('price-group')\n    product_filter = request.GET.get('product-group')\n    brand_filter = request.GET.get('brand-group')\n    discount_filter = request.GET.get('discount-group')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "productpage",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def productpage(request, category_id):\n    category = get_object_or_404(Category, pk=category_id)\n    if request.method == 'POST':\n        user_id = request.session.get('user_id')\n        buy1=request.POST.get('buy')\n        cart1=request.POST.get('cart')\n        if cart1 is not None:\n            category.cart=user_id \n            category.save()\n        if buy1 is not None:",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "profilepage",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def profilepage(request):\n    user_id = request.session.get('user_id')\n    print(user_id)\n    user_data = None\n    try:\n        cart = Category.objects.filter(cart=user_id)\n        buy = Category.objects.filter(buy=user_id)\n        print(cart)\n        user_data = User.objects.get(id=user_id)\n    except User.DoesNotExist:",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "custom_admin_required",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def custom_admin_required(view_func):\n    def _warapped_view(request, *args, **kwargs):\n        if not request.session.get('is_admin', False):\n            return redirect('login')\n        return view_func(request, *args, **kwargs)\n    return _warapped_view\n@custom_admin_required\ndef adminpage(request):\n    users = User.objects.all()\n    category_list = Category.objects.all()",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "adminpage",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def adminpage(request):\n    users = User.objects.all()\n    category_list = Category.objects.all()\n    if request.method == 'POST':\n        pimg = request.FILES.get('pimg')\n        price = request.POST.get('price')\n        wattage = request.POST.get('wattage')\n        voltage = request.POST.get('voltage')\n        warrenty = request.POST.get('warrenty')\n        title = request.POST.get('title')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_user",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def delete_user(request):\n    if request.method == 'POST':\n        id =  request.POST.get(\"uid\")\n        btn = request.POST.get(\"btn\")\n        user = User.objects.get(id=id)\n        button_dlt=request.POST.get(\"dlt\")\n        button_upt=request.POST.get(\"upt\")\n        if  button_upt  is not None:\n             user.is_admin=request.POST.get(\"is_admin\") == 'on'\n             user.save()",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_category",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def delete_category(request):\n    if request.method == 'POST':\n        id =  request.POST.get(\"pid\")\n        btn = request.POST.get(\"btn\")\n        user = Category.objects.get(id=id)\n        user.delete()\n    return  redirect(reverse('adminpage'))\ndef reset(request):\n    if request.method == 'POST':\n        button_rst=request.POST.get(\"btn_reset\")",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "reset",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def reset(request):\n    if request.method == 'POST':\n        button_rst=request.POST.get(\"btn_reset\")\n        if button_rst is not None:\n            product=Category.objects.filter(arrival_time=timezone.now().date()) \n            for i in product:\n                i.status=\"-\"\n                i.arrival_time=None   \n                i.save()  \n    return redirect(reverse('adminpage'))",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  aboutus_page(request):\n    return render(request, 'aboutus_page.html')\ndef  admin_user(request):\n     users = User.objects.all()\n     return render(request, 'admin_user.html', {'users': users})\ndef  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  aboutus_page(request):\n    return render(request, 'aboutus_page.html')\ndef  admin_user(request):\n     users = User.objects.all()\n     return render(request, 'admin_user.html', {'users': users})\ndef  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  admin_user(request):\n     users = User.objects.all()\n     return render(request, 'admin_user.html', {'users': users})\ndef  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  admin_user(request):\n     users = User.objects.all()\n     return render(request, 'admin_user.html', {'users': users})\ndef  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  admin_category(request):\n     category_list = Category.objects.all()\n     return render(request, 'admin_category.html', {'category_list': category_list})\ndef  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})\ndef blog_page(request):\n    return render(request, 'blog_page.html')\ndef otp_page(request):"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  privacy(request):\n    return render(request, 'privacy.html')\ndef  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})\ndef blog_page(request):\n    return render(request, 'blog_page.html')\ndef otp_page(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})\ndef blog_page(request):\n    return render(request, 'blog_page.html')\ndef otp_page(request):\n    email = request.session.get('user_email')\n    otp = request.session.get('otp')"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  payment_page(request, category_id):\n    price = request.GET.get('price')\n    user_id = request.session.get('user_id')\n    category = get_object_or_404(Category, id=category_id)\n    return render(request, 'payment_page.html', {'category': category})\ndef blog_page(request):\n    return render(request, 'blog_page.html')\ndef otp_page(request):\n    email = request.session.get('user_email')\n    otp = request.session.get('otp')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "blog_page",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def blog_page(request):\n    return render(request, 'blog_page.html')\ndef otp_page(request):\n    email = request.session.get('user_email')\n    otp = request.session.get('otp')\n    phone_number = request.session.get('phone_number')\n    cus_msg = \"Enter Valid OTP...\"\n    if request.method == 'POST':\n       enetr_otp = request.POST.get('otp')\n       phone_verification_status = verify_otp_sms(phone_number, enetr_otp)",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "otp_page",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def otp_page(request):\n    email = request.session.get('user_email')\n    otp = request.session.get('otp')\n    phone_number = request.session.get('phone_number')\n    cus_msg = \"Enter Valid OTP...\"\n    if request.method == 'POST':\n       enetr_otp = request.POST.get('otp')\n       phone_verification_status = verify_otp_sms(phone_number, enetr_otp)\n       if enetr_otp==otp or phone_verification_status == 'approved':\n            del request.session['otp']",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 2,
+            "peekOfCode": "def  user_list(request):\n    user_id = request.session.get('user_id')\n    categories = Category.objects.filter(owner_id=user_id)\n    return render(request, 'user_list.html', {'categories': categories})\ndef contactus(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email = request.POST.get('email')\n        phone_number = request.POST.get('phone_number')\n        city = request.POST.get('city')"
+        },
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def  user_list(request):\n    user_id = request.session.get('user_id')\n    categories = Category.objects.filter(owner_id=user_id)\n    return render(request, 'user_list.html', {'categories': categories})\ndef contactus(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email = request.POST.get('email')\n        phone_number = request.POST.get('phone_number')\n        city = request.POST.get('city')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "contactus",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def contactus(request):\n    if request.method == 'POST':\n        name = request.POST.get('name')\n        email = request.POST.get('email')\n        phone_number = request.POST.get('phone_number')\n        city = request.POST.get('city')\n        description1 = request.POST.get('description1')\n        new_contact = Contact(name=name, \n                              email=email, \n                              phone_number=phone_number, ",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "payout_success",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def payout_success(request):\n    return render(request, 'payout_success.html')\ndef cart(request):\n    user_id = request.session.get('user_id')\n    cart = Category.objects.filter(cart=user_id)\n    return render(request, 'cart.html',{'cart': cart})\ndef cart(request):\n    user_id = request.session.get('user_id')\n    carts = Category.objects.filter(cart=user_id)\n    if request.method=='POST':",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "cart",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def cart(request):\n    user_id = request.session.get('user_id')\n    cart = Category.objects.filter(cart=user_id)\n    return render(request, 'cart.html',{'cart': cart})\ndef cart(request):\n    user_id = request.session.get('user_id')\n    carts = Category.objects.filter(cart=user_id)\n    if request.method=='POST':\n        carts.update(cart=0)\n        return redirect('cart')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "cart",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def cart(request):\n    user_id = request.session.get('user_id')\n    carts = Category.objects.filter(cart=user_id)\n    if request.method=='POST':\n        carts.update(cart=0)\n        return redirect('cart')\n    return render(request, 'cart.html',{'carts': carts})\ndef success(request):\n    user_id = request.session.get('user_id')\n    user = get_object_or_404(User, pk=user_id)",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "success",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def success(request):\n    user_id = request.session.get('user_id')\n    user = get_object_or_404(User, pk=user_id)\n    buy_items = Category.objects.filter(buy=user_id)\n    return render(request, 'success.html', {'user': user, 'buy_items': buy_items})\n    # return render(request, 'success.html', {'user': user, 'category': category})\ndef generate_gstin():\n    \"\"\"Generate a random GSTIN-like number (15 characters).\"\"\"\n    chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'\n    digits = '0123456789'",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "generate_gstin",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def generate_gstin():\n    \"\"\"Generate a random GSTIN-like number (15 characters).\"\"\"\n    chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'\n    digits = '0123456789'\n    gstin = '27'  # Maharashtra state code\n    gstin += ''.join(random.choices(chars + digits, k=10))\n    gstin += '1Z'\n    gstin += random.choice(chars)\n    return gstin\ndef generate_invoice(request, category_id):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "generate_invoice",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def generate_invoice(request, category_id):\n    user_id = request.session.get('user_id')\n    user = get_object_or_404(User, pk=user_id)\n    product = get_object_or_404(Category, pk=category_id)\n    original_price = product.price\n    # Determine discount\n    discount_rate = 0\n    if product.discount_10:\n        discount_rate = 10\n    elif product.discount_20:",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "ordered_item",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def ordered_item(request):\n    user_id = request.session.get('user_id')\n    buys = Category.objects.filter(buy=user_id)\n    if request.method=='POST':\n        buys.update(buy=0)\n        return redirect('ordered_item')\n    return render(request, 'ordered_item.html',{'buys': buys})\ndef cart_added(request):\n    return render(request, 'cart_added.html')\n# def clear(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "cart_added",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def cart_added(request):\n    return render(request, 'cart_added.html')\n# def clear(request):\n#     return redirect(request, 'ordered_item.html',{'orders':orders})\ndef admin_invoice(request):\n    invoice_list = Invoice.objects.all().order_by('-date', '-time')  # Show latest first\n    return render(request, 'admin_invoice.html', {'invoice_list': invoice_list})\n@csrf_exempt\ndef reset_invoice(request):\n    if request.method == 'POST':",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "admin_invoice",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def admin_invoice(request):\n    invoice_list = Invoice.objects.all().order_by('-date', '-time')  # Show latest first\n    return render(request, 'admin_invoice.html', {'invoice_list': invoice_list})\n@csrf_exempt\ndef reset_invoice(request):\n    if request.method == 'POST':\n        Invoice.objects.all().delete()\n    return redirect('admin_invoice')\n@csrf_exempt\ndef delete_invoice(request):",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "reset_invoice",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def reset_invoice(request):\n    if request.method == 'POST':\n        Invoice.objects.all().delete()\n    return redirect('admin_invoice')\n@csrf_exempt\ndef delete_invoice(request):\n    if request.method == 'POST':\n        invoice_id = request.POST.get('invoice_id')\n        invoice = get_object_or_404(Invoice, id=invoice_id)\n        invoice.delete()",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_invoice",
+        "kind": 2,
+        "importPath": "solar_panel.solar_app.views",
+        "description": "solar_panel.solar_app.views",
+        "peekOfCode": "def delete_invoice(request):\n    if request.method == 'POST':\n        invoice_id = request.POST.get('invoice_id')\n        invoice = get_object_or_404(Invoice, id=invoice_id)\n        invoice.delete()\n    return redirect('admin_invoice')",
+        "detail": "solar_panel.solar_app.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.asgi",
+        "description": "solar_panel.solar_panel.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "solar_panel.solar_panel.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-2m$#jgin+2w(asi_p(z%bmt!6p(#lvh(zgv5rv_gypbif_*iti'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-2m$#jgin+2w(asi_p(z%bmt!6p(#lvh(zgv5rv_gypbif_*iti'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'django.contrib.sites',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'django.contrib.sites',\n    'solar_app'\n]",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'solar_panel.urls'",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "ROOT_URLCONF = 'solar_panel.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'solar_panel.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'sunpac',\n        'USER': 'postgres',\n        'PASSWORD': 'abhi2525',\n        'HOST': 'localhost',",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'sunpac',\n        'USER': 'postgres',\n        'PASSWORD': 'abhi2525',\n        'HOST': 'localhost',\n        'PORT': '5432'\n    }\n}",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Define the URL prefix for media files",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Define the URL prefix for media files\nMEDIA_URL = '/media/'",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Define the URL prefix for media files\nMEDIA_URL = '/media/'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Define the URL prefix for media files\nMEDIA_URL = '/media/'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Define the URL prefix for media files\nMEDIA_URL = '/media/'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_HOST_USER = 'abhivala55@gmail.com'    \nEMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = 'aelr hbig apzb ecaq'\nAUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHENTICATION_BACKENDS",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "AUTHENTICATION_BACKENDS = [\n    'django.contrib.auth.backends.ModelBackend',\n]\nAPPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "APPEND_SLASH",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.settings",
+        "description": "solar_panel.solar_panel.settings",
+        "peekOfCode": "APPEND_SLASH = False",
+        "detail": "solar_panel.solar_panel.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.urls",
+        "description": "solar_panel.solar_panel.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('login/', login, name='login'),\n    path('logout/', logout, name='logout'),# Use a different path for the login page\n    path('', home, name='home'),\n    path('home2', home2, name='home2'),\n    path('newcategory/', NewCategoryView.as_view(), name='newcategory'),\n    # path('insert2', insert2, name='insert2'),\n    path('signup/', signup, name='signup'),\n    path('more/', more, name='more'),",
+        "detail": "solar_panel.solar_panel.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "solar_panel.solar_panel.wsgi",
+        "description": "solar_panel.solar_panel.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "solar_panel.solar_panel.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "solar_panel.manage",
+        "description": "solar_panel.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'solar_panel.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "solar_panel.manage",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'admin_user.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="main">
+    {% comment %} <h2>Admin Panel</h2> {% endcomment %}
+   <div class="leftt">
+     {% comment %} <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile"> {% endcomment %}
+        <div class="button">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile">
+            <a href="/adminpage/"><input type="submit" value="Insert product"></a>
+            <a href="/admin_user/"><input type="submit" value="User Records"></a>
+            <a href="/admin_category/"><input type="submit" value="Product Records"></a>
+            <a href="/admin_invoice/"><input type="submit" value="Invoice Records" /></a>
+        </div>
+   </div>
+   <div class="rightt">
+    <div class="userr">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>is_admin</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Password</th>
+                    <th>City</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+               <form method='POST' action="{% url 'delete_user' %}">
+                    {% csrf_token %}
+                <tr>
+                    <input type="hidden" name="uid" value="{{ user.id }}">
+                    <td>{{ user.id }}</td>
+                        <td id="">
+                            <input type="checkbox" name="is_admin" {% if user.is_admin%}checked{% endif %}>
+                            {% if user.is_admin %}
+                            <h5>True</h5>
+                            {% else %}
+                            <h5>False</h5>
+                            {% endif %}
+                        </td>
+                        {% comment %} {% if user.is_admin %} {% endcomment %}
+                            {% comment %} <input type="checkbox" name="is_admin" {% if user.is_admin %} checked>  {% endif %} {% endcomment %}
+                        {% comment %} {% else %}
+                            <input type="checkbox" name="is_admin">
+                        {% endif %} {% endcomment %}
+                            {% comment %} <input type="hidden" name="is_admin" value="{{ user.is_admin }}"> {% endcomment %}
+                        {% comment %} {% if user.is_admin %}
+                            <input type="checkbox" 
+                            {% if user.is_admin %}
+                                checked
+                            {% endif %}
+                                >
+                        {% endif %} {% endcomment %}
+                     {% comment %} <input type="hidden" name="is_admin" value="{{ user.is_admin }}"> {% endcomment %}
+                    </td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.phone_number }}</td>
+                    <td>{{ user.password }}</td>
+                    <td>{{ user.city }}</td>
+                    <td>{{ user.address }}</td>
+                    <td><button name="dlt" type="submit">Delete</button></td>
+                    <td><button name="upt" type="submit">Update</button></td>
+                </tr>
+               </form>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+   </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll(".nav-link, .nav-link .ins1");
+
+
+
+        hlinks.forEach(link => {
+            link.addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.location.href = url
+
+                this.classList.add('clicked');
+
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            })
+        });
+     });
+    </script>
+</body>
+</html>   

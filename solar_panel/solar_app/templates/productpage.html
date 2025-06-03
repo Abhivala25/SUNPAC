@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'productpage.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" class="sunpac" data-url="{% url 'home2' %}" />
+        <div class="header">
+          <div class="nav2">
+            <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+            <h4 class="products" data-url="{% url 'gridview' %}">Products
+              {% comment %} <ul class="popup">
+                <li>Solar Panel</li>
+                <li>Inverters</li>
+                <li>Solar Cooker</li>
+                <li>Solar Heater</li>
+              </ul> {% endcomment %}
+            </h4>
+            <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+            <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+          </div>
+          <button class="button" data-url="/insert2/">Lists</button>
+          <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile" data-url="{% url 'profilepage' %}">
+          <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}">
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product1">
+          <div class="left">
+            <img src="{{ category.pimg.url }}" alt="{{ category.title }}" />
+          </div>
+          <div class="right">
+            <h2>{{ category.title }}</h2>
+            <h2>₹ {{ category.price }}</h2>
+            <p>{{ category.description1 }}</p>
+            <form method="POST" action="">
+              {% csrf_token %}
+              <button name="cart" value="add_to_cart" type="submit" class="order-btn" data-url="{% url 'cart_added' %}">Add to Cart</button>
+            {% comment %} </form> {% endcomment %}
+          
+            {% comment %} <form method="POST" action="{% url 'payment_page' category.id %}">
+              {% csrf_token %} {% endcomment %}
+              <button name="buy" value="buy_now" type="submit" class="order-btn buy" data-url="{% url 'payment_page' category.id %}">Order now</button>
+            </form>
+          </div>
+        </div>
+        <div class="specification">
+          <h2>specification</h2>
+        </div>
+      </div>
+      <div class="text">
+        <div class="que">
+          <h2>Wattage</h2><br />
+          <h2>Voltage</h2><br />
+          <h2>Warranty</h2><br />
+          <h2>Discount</h2><br />
+          <h2>Product Name</h2><br />
+          <h2>Product Brand</h2><br />
+        </div>
+        <div class="ans">
+          <h2>{{ category.wattage }}</h2><br />
+          <h2>{{ category.voltage }}</h2><br />
+          <h2>{{ category.warrenty }}</h2><br />
+          {% if category.discount_10 %}
+            <h2>10 %</h2><br />
+          {% elif category.discount_20 %}
+            <h2>20 %</h2><br />
+          {% elif category.discount_30 %}
+            <h2>30 %</h2><br />
+          {% endif %}
+          {% if category.solar_panel %}
+            <h2>Solar Panel</h2><br />
+          {% elif category.inveter %}
+            <h2>Inveter</h2><br />
+          {% elif category.solar_heater %}
+            <h2>Solar Heater</h2><br />
+          {% elif category.solar_cooker %}
+            <h2>Solar Cooker</h2><br />
+          {% endif %}
+          {% if category.luminous %}
+            <h2>luminous</h2><br />
+          {% elif category.loom %}
+            <h2>Loom</h2><br />
+          {% elif category.hi_mo %}
+            <h2>Hi-Mo</h2><br />
+          {% endif %}
+        </div>
+      </div>
+      <div class="logo2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" />
+      </div>
+
+      <div class="title3">
+        <h1>Solar Power Your Home</h1>
+        <button class="order-btn" data-url="{% url 'gridview' %}">Order now</button>
+      </div>
+
+      <div class="footer">
+        <div class="nav3">
+          <h4>Sunpac @ 2023</h4>
+          <h4 class="nav-link" data-url="{% url 'privacy' %}">Privacy & legal</h4>
+          <h4 class="nav-link" data-url="{% url 'contactus' %}">contact</h4>
+          <h4 class="nav-link" data-url="{% url 'blog_page' %}">guide</h4>
+          <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About</h4>
+        </div>
+      </div>
+    </div> <!-- Closing main div -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll('.buy, .products,.button ,.nav-link, .nav-link, .order-btn, .sunpac, .profile, .cart')
+      
+        hlinks.forEach((link) => {
+          link.addEventListener('click', function () {
+            const url = this.getAttribute('data-url')
+            window.location.href = url
+      
+            this.classList.add('clicked')
+      
+            setTimeout(() => {
+              this.classList.remove('clicked')
+            }, 300)
+          })
+        })
+      })
+    </script>
+  </body>
+</html>

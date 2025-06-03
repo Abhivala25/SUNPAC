@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'home.css' %}">
+    <title>Your Page Title</title>
+
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="{% static 'logo/logo.png' %}" alt="">
+
+            <div class="nav2">
+                <h4>Home</h4>
+                <h4 class="products">Products
+                    <ul class="popup">
+                        <li class="nav-link" data-url="{% url 'login' %}">Solar Panel</li>
+                        <li class="nav-link" data-url="{% url 'login' %}">Inverters</li>
+                        <li class="nav-link" data-url="{% url 'login' %}">Solar Cooker</li>
+                        <li class="nav-link" data-url="{% url 'login' %}">Solar Heater</li>
+                    </ul>
+                </h4>
+                <h4 class="nav-link" data-url="{% url 'login' %}">Blog</h4>
+                <h4 class="nav-link" data-url="{% url 'login' %}">About us</h4>
+            </div>
+
+            <div class="button">
+               <button  class="login nav-link" data-url ="{% url 'login' %}">Login</button>
+
+               <button class="signup nav-link" data-url="{% url 'signup' %}">Signup</button> 
+            </div>
+            
+        </div>
+        
+        <div class="content">
+            <div class="left">
+                <h4>Best Quality Solar Panel</h4>
+                <h1><span>RENEWABLE<br></span>
+                    ENERGY</h1>
+                <p>"Powering Tomorrow, Today, Embrace<br> 
+                    Solar Energy for a Sustainable Future."</p>
+                    <button class="order-btn" data-url="{% url 'login' %}">Order now</button>
+            </div>
+
+            <div class="right">
+                <img src="{% static 'logo/glow.svg' %}" alt="" >  
+                <div class="box">
+                    <img src="{% static 'logo/solar.svg' %}" alt="" class="updown animation">
+                </div>
+            </div>
+        </div>
+
+        <div class="conn">
+            <div class="card">
+             <h2>
+             <img src="{% static 'logo/1.svg' %}" alt="">
+                </h2>
+                <h3>Guaranteed<br>
+                     Product</h3>
+            </div>
+        
+             <div class="card">
+                <h2>
+                <img src="{% static 'logo/2.svg' %}" alt="">
+                 </h2>
+                <h3>Solar<br>
+                    Integrated <br>
+                    Ecosystem</h3>
+            </div>
+
+                <div class="card">
+                    <h2>
+                    <img src="{% static 'logo/7.svg' %}" alt="">
+                    </h2>
+                    <h3>System <br>
+                        Perform<br>
+                        Monitoring</h3>
+                </div>
+            </div>
+
+            <div class="gif">
+                <div class="gifleft">
+                    <img src="{% static 'logo/gif1.gif' %}" alt="">
+                </div>
+                <div class="gifcontent">
+                    <h3>Savings</h3>
+                    <h1>Electricity For Less</h1>
+                    <p>Use solar energy to power your home and<br>reduceyour dependence on the grid.<br>Purchase solar at the high quality of any<br>national providerwith Energy’s of any<br>guarantee and take control of your monthly<br>electricity bill.</p>
+                    <button class="order-btn" data-url="{% url 'login' %}">Order now</button>
+                </div>
+            </div>
+
+            <div class="gif2">
+                <div class="gifcontent2">
+                   <h3>Design</h3>
+                   <h1>Sleek and Durable</h1>
+                   <p>Our solar panels are low-profile and durable<br>quietly converting sunlight to energy for<br>decades to come. Integrated hardware and<br>simple design achieve this by securing the<br>panels close to your roof and to each other for<br>a minimalist aesthetic.</p>
+                   <button class="order-btn" data-url="{% url 'login' %}">Order now</button>
+               </div>
+               <div class="gifright">
+                       <img src="{% static 'logo/gif2.gif' %}" alt="">
+                </div>
+           </div>
+
+           <div class="sun">
+            <div class="sunleft">
+                <img src="{% static 'logo/sun.svg' %}" alt="" class="updown4 animation">
+            </div>
+            <div class="suncon">
+               <h1>Harvesting Sunshine</h1>
+               <p>Our solar journey begins with the mighty sun,the ultimate source of clean and limitless energy.</p>
+                <h3>< more</h3>
+            </div>
+        </div>
+
+        <div class="solar">
+            <div class="solarcon">
+                <h1>Sunlight to Power</h1>
+                <p>Witness the artistry of our solar panels as<br>they convert sunlight into energy, creating a<br>seamless blend of technology and nature.</p>
+                <h3>< more</h3>
+            </div>
+            <div class="solarright">
+                <img src="{% static 'logo/solar1.svg' %}" alt="" class="updown1 animation">
+            </div>
+        </div>
+
+        <div class="battery">
+            <div class="hey">
+                <img src="{% static 'logo/battery.svg' %}" alt="" class="updown2 animation">
+            </div>
+            <div class="hello">
+               <h1>Sunlit Resilience</h1>
+               <p> Explore the heart of our solar system—the energy-storing batteries that stand as a beacon of sustainability and reliability.</p>
+               <h3>< more</h3>
+            </div>
+        </div>
+
+        <div class="bulb">
+            <div class="hi">
+                <h1>Solar Luminescence</h1>
+                <p>Our bulbs harness the stored solar energy, casting a<br>luminous aura that brightens your surroundings,<br>making every moment shine.</p>
+                <h3>< more</h3>
+            </div>
+           <div class="good">
+                   <img src="{% static 'logo/bulb.svg' %}" alt="" class="updown3 animation">
+            </div>
+       </div>
+
+       <div class="photo">
+        <div class="text">
+         <h1>Clean Aesthetic</h1>
+         <p>All-black panels and proprietary hardware keep the array close to your roof — no bulky racks, no large gaps.</p>
+        </div>
+
+        <div class="image">
+            <img src="{% static 'logo/panel.svg' %}" alt="">
+        </div>
+       </div>
+
+        <div class="title">
+            <h1><span>Solar Panel</span> Specs</h1>
+        </div>
+
+        <div class="maincon">
+        <div class="spec">
+            <div class="yes">
+                <div class="a">
+               
+                <h3>Dimensions<br>
+                74.4" x 41.2" x 1.57"<br>
+                (including frame)</h3>
+           
+            </div>
+            <div class="b">   
+                <h3>Wattage<br>
+                 400 W</h3>
+            </div>
+            <div class="c"> 
+                <h3>Certifications<br>
+                IEC / UL 61730,CEC<br>
+                Listed,IEC 61215</h3>
+            </div>
+            <div class="d">
+                <h3>Inverter Dimensions<br>
+                26" x 16" x 6"</h3>
+            </div>
+        </div>
+        </div> 
+
+        <div class="spec2">
+            <div class="no">
+                <div class="e">
+                    <h3>Design<br>
+                    Black anodized<br>
+                    aluminum alloy<br>
+                    frameBlack solar<br>
+                    cells & backsheet
+                    </h3>
+                </div>
+                <div class="f">   
+                   <h3>Operating Temperature<br>
+                    -40°F up to +185°F</h3>
+                </div>
+                <div class="g"> 
+                    <h3>Inverter Power<br>
+                    3.8kw / 7.6kw<br>
+                    97.5% efficiency</h3>
+                </div>
+                <div class="h">
+                    <h3>Inverter Warranty<br>
+                    12.5 years</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="div">
+            <div class="title2">
+                <h1>Warranty</h1>
+                <h2>25-year performance guarantee</h2>
+            </div>
+    
+            <div class="logo2">
+                <img src="{% static 'logo/logo2.svg' %}" alt="">
+                <h1>Solar Power Your Home</h1>
+                <button class="order-btn" data-url="{% url 'login' %}">Order now</button>
+            </div>
+        
+            <div class="footer">
+                <h4 class="order-btn" data-url="{% url 'login' %}">Sunpac @ 2023</h4>
+                <h4 class="order-btn" data-url="{% url 'login' %}">Privacy & legal</h4>
+                <h4 class="order-btn" data-url="{% url 'login' %}">contact</h4>
+                <h4 class="order-btn" data-url="{% url 'login' %}">guide</h4>
+                <h4 class="order-btn" data-url="{% url 'login' %}">About</h4>
+            </div>
+        </div>
+
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hlinks = document.querySelectorAll(".order-btn , .nav-link, .nav-link");
+    
+    
+    
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+    
+                    this.classList.add('clicked');
+    
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+         });
+        </script>
+       
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'otp_page.css' %}">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="img">
+        <img src="{% static 'logo/logo2.svg' %}" alt="Your Image Alt Text">
+    </div>
+    <div class="hello">
+        <div class="container2">
+            <div class="title">Enter OPT</div>
+                <div class="title1">We are send otp on your email...</div>
+                    <div class="content">
+                        <form method='POST' action="{% url 'otp_page' %}">
+                            {% csrf_token %}
+                            <div class="user-details">
+                                <div class="input-box">
+                                <span class="details">OTP</span>
+                                <input type="number" name="otp" placeholder="Enter your otp" required>
+                            </div>
+                        </div>
+                        {% csrf_token %}
+                        {% comment %} {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-danger" role="alert">
+                                {{ message }}
+                                {% endfor %}
+                            </div>
+                        {% endif %} {% endcomment %}
+                        {% if cus_msg %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ cus_msg }}
+                           {% endif %}
+                        </div>
+                    </div>
+                <div class="button1">
+                    <input type="submit" value="Confirm">
+                </div>
+                <div class="links">
+                    <h2>please Wait...</h2>
+              {% comment %} <h4 class="signup" data-url='/signup'>Create Account</h4> {% endcomment %}
+                {% comment %} <a href="{% url 'signup' %}">Sign Up</a> {% endcomment %}
+                </div>
+            </div>
+      </form>       
+    </div>
+</body>
+</html>

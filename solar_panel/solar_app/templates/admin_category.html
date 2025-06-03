@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'admin_category.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="main">
+    {% comment %} <h2>Admin Panel</h2> {% endcomment %}
+   <div class="leftt">
+     {% comment %} <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile"> {% endcomment %}
+        <div class="button">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile">
+            <a href="/adminpage/"><input type="submit" value="Insert product"></a>
+            <a href="/admin_user/"><input type="submit" value="User Records"></a>
+            <a href="/admin_category/"><input type="submit" value="Product Records"></a>
+            <a href="/admin_invoice/"><input type="submit" value="Invoice Records" /></a>
+        </div>
+   </div>
+   <div class="category">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Arrival_Date</th>
+                <th>Status</th>
+                <th>Price</th>
+                <th>Wattage</th>
+                <th>Voltage</th>
+                <th>Warranty</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Solar Panel</th>
+                <th>Solar Heater</th>
+                <th>Inverter</th>
+                <th>Solar Cooker</th>
+                <th>Luminous</th>
+                <th>Loom</th>
+                <th>Hi-Mo</th>
+                <th>Discount 10%</th>
+                <th>Discount 20%</th>
+                <th>Discount 30%</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Description</th>
+                <th>
+                    <form method='POST' action="{% url 'reset' %}">
+                        {% csrf_token %}
+                        <button type="submit" name="btn_reset">Reset</button>
+                    </form>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in category_list %}
+            <form method='POST' action="{% url 'delete_category' %}">
+                    {% csrf_token %}
+                <tr>
+                    <input type="hidden" name="pid" value="{{ item.id }}">
+                    <td><img src="{{ item.pimg.url }}" alt="Product Image" width="100"></td>
+                    <td>{{ item.arrival_time }}</td>
+                    <td>{{ item.status }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.wattage }}</td>
+                    <td>{{ item.voltage }}</td>
+                    <td>{{ item.warrenty }}</td>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.description1 }}</td>
+                    <td>{{ item.solar_panel }}</td>
+                    <td>{{ item.solar_heater }}</td>
+                    <td>{{ item.inverter }}</td>
+                    <td>{{ item.solar_cooker }}</td>
+                    <td>{{ item.luminous }}</td>
+                    <td>{{ item.loom }}</td>
+                    <td>{{ item.hi_mo }}</td>
+                    <td>{{ item.discount_10 }}</td>
+                    <td>{{ item.discount_20 }}</td>
+                    <td>{{ item.discount_30 }}</td>
+                    <td>{{ item.first_name }}</td>
+                    <td>{{ item.last_name }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.phone }}</td>
+                    <td>{{ item.description }}</td>
+                    <td><button name="btn" type="submit">Delete</button></td>
+                </tr>
+            </form>
+                {% endfor %}
+        </tbody>
+    </table>
+   </div>
+  </div>
+</body>
+</html>

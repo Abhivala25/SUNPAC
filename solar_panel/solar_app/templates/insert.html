@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'insert.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="main2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" class ="sunpac">
+        <div class="header">
+            <div class="nav2">
+                <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                <h4 class="products">Products
+                    <ul class="popup">
+                        <li><input type="checkbox" name="product_name" value="Solar Panel"> Solar Panel</li>
+                        <li><input type="checkbox" name="product_name" value="Inverters"> Inverters</li>
+                        <li><input type="checkbox" name="product_name" value="Solar Cooker"> Solar Cooker</li>
+                        <li><input type="checkbox" name="product_name" value="Solar Heater"> Solar Heater</li>
+                    </ul>
+                </h4>
+                <h4>Blog</h4>
+                <h4>About us</h4>
+            </div>
+            <button class="button">Lists</button> 
+            <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile">
+            <img src="{% static 'logo/cart.svg' %}" alt="" class="cart">
+        </div>
+    </div>
+
+  
+    {% comment %} <h1>Add Product</h1>
+    <form method="POST" action="{% url 'insert' %}">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form> {% endcomment %}
+
+
+    <div class="ractangle">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="left">
+                <div class="first">
+                    <h2>Add Your Product Details</h2>
+                    <div class="file-upload">
+                        <h2>Choose Your Photo here</h2>
+                        <input type="file" accept=".jpg, .jpeg, .png, .svg">
+                    </div>
+                    <div class="name">
+                        <h2>Add Your Solar Product Details</h2>
+                        <h3>Price</h3>
+                        <input type="text" placeholder="Amount" name="price" id="price">
+                    </div>
+                    <div class="productname">
+                        <h3>Product Name</h3>
+                        <div class="checkbox-container">
+                            <label><input type="checkbox" name="product_name" value="Solar Panel"> Solar Panel</label>
+                            <label><input type="checkbox" name="product_name" value="Solar Heater"> Solar Heater</label>
+                            <label><input type="checkbox" name="product_name" value="Inverter"> Inverter</label>
+                            <label><input type="checkbox" name="product_name" value="Solar Cooker"> Solar Cooker</label>
+                        </div>
+                    
+                    <div class="productbrand">
+                        <h3>Product Brand</h3>
+                        <div class="checkbox-container1">
+                            <label><input type="checkbox" id="brand1" name="product_brand" value="luminous"> luminous</label>
+                            <label><input type="checkbox" id="brand2" name="product_brand" value="loom"> loom</label>
+                            <label><input type="checkbox" id="brand3" name="product_brand" value="hi-mo"> hi-mo</label>
+                        </div>
+                    </div>
+                    <div class="Wattage">
+                        <h3>Wattage</h3>
+                        <div class="checkbox-container2">
+                            <label><input type="checkbox" id="wattage1" name="wattage" value="less300"> < 300 W</label>
+                            <label><input type="checkbox" id="wattage2" name="wattage" value="greater300"> > 300 W</label>
+                        </div>
+                    </div>
+                    <div class="Discount">
+                        <h3>Discount Product</h3>
+                        <div class="checkbox-container3">
+                            <label><input type="checkbox" id="dis1" name="discount" value="10%"> 10 %</label>
+                            <label><input type="checkbox" id="dis2" name="discount" value="20%"> 20 %</label>
+                            <label><input type="checkbox" id="dis3" name="discount" value="30%"> 30 %</label>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <h2>Your Contact Details</h2>
+                        <div class="con">
+                            <div class="left1">
+                                <h3>First Name</h3>
+                                <input type="text" placeholder="first name" name="first_name" id="fname">
+                            </div>
+                            <div class="right1">
+                                <h3>Last Name</h3>
+                                <input type="text" placeholder="last name" name="last_name" id="lname">
+                            </div>
+                        </div>
+                        <div class="con2">
+                            <div class="left2">
+                                <h3>Email</h3>
+                                <input type="email" placeholder="loremipsum@gmail.com" name="email" id="email">
+                            </div>
+                            <div class="right2">
+                                <h3>Phone</h3>
+                                <input type="number" placeholder="+91 9090909090" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="div1">
+                            <div class="discription">
+                                <h2>Write Description Of Product</h2>
+                                <textarea placeholder="Write Description here...!" cols="50" rows="10" name="description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="order-btn">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+        <div class="right"> 
+            <img class="image" src="{% static 'logo/insertimage.svg' %}" alt=""> 
+        </div>
+    </div>
+</div>
+</body>
+</html>

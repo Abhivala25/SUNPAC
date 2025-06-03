@@ -1,0 +1,72 @@
+body,
+html {
+    background-color: #050E13;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 7vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 33vw;
+    background: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h1 {
+    color: #33A083;
+    font-weight: 500;
+    margin-top: 0.5vw;
+}
+
+.card h2 {
+    color: #000;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 0.5vw;
+    padding-bottom: 1vw;
+}
+
+.card img {
+    width: 20vw;
+}
+
+button {
+    padding: 0.6vw 3vw;
+    width: fit-content;
+    border-radius: 4px;
+    font-weight: 550;
+    border-radius: 0;
+    border: none;
+    font-size: 1.2vw;
+    background-color: #33A083;
+    border: 2px solid #33A083;
+    color: #fff;
+    cursor: pointer;
+}
+
+.order-btn2:hover {
+    color: #33A083;
+    background: #fff;
+}
+
+@media (hover: hover) {
+    .order-btn2:hover {
+        color: #33A083;
+        background: #fff;
+    }
+}

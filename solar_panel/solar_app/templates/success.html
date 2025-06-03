@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'success.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="main2">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class ="sunpac" data-url="{% url 'home2' %}">
+        <div class="header">
+            <div class="nav2">
+                <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                <h4 class="products">Products
+                    {% comment %} <ul class="popup">
+                        <li class="solar_panel" data-url="/gridview/?csrfmiddlewaretoken=czuSld1GbAzyjLNn0LIaNeBPRYKJhtHKQFYXhVGa0oLsUzm1Koavcb66NPA3wxsC&product-group=4">Solar Panel</li>
+                        <li class="inveter" data-url="/gridview/?csrfmiddlewaretoken=A5uilEkmywHpPKIxdtxkY9KhDh7MVU9EebYnhmZQnkTjqyhbX6ZFn6fyz8X6aYUw&product-group=5">Inverters</li>
+                        <li class="solar_heater" data-url="/gridview/?csrfmiddlewaretoken=y46K3XzOVXS46G4lW7RIzZnVQudL2Z0wcaAPZFeiKL4YHuDZGKj3YWScMl35h3Lo&product-group=7">Solar Cooker</li>
+                        <li class="solar_cooker" data-url="/gridview/?csrfmiddlewaretoken=rNEh22GyBMpS96UQfqxd6u8MstaP7AFJ5T8mYKl2qABMKUtuZ3ZyvrD3ok09mEqB&product-group=6">Solar Heater</li>
+                    </ul> {% endcomment %}
+                </h4>
+                <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+                <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+            </div>
+                <button class="button" data-url="{% url 'insert2' %}">Lists</button> 
+                <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile" data-url="{% url 'profilepage' %}">
+                <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}">
+                
+        </div>
+    </div>
+    <div class="cards">
+        {% for c in buy_items %}
+          <div class="card1 nav-product" data-url="{% url 'productpage' c.id %}">
+            <img class="cimg" src="{{ c.pimg.url }}" alt="{{ c.title }}" />
+            <h3 class="title">{{ c.title }}</h3>
+            <h3 class="price1">₹ {{ c.price }}</h3>
+            <h4>Name: {{ user.name }}</h4>
+            <h4>Mo.No: {{ user.phone_number }}</h4>
+            <h4>City: {{ user.city }}</h4>
+            <h4>Address: {{ user.address }}</h4>
+            <a href="{% url 'generate_invoice' c.id %}" class="generate-link">Generate Invoice</a>
+          </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hlinks = document.querySelectorAll('.generate-link,.sunpac,.button, .profile, .cart, .order, .products, .cart2, .nav-product, .products, .nav-link, .nav-link, .order-btn, .logout')
+    
+      hlinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          const url = this.getAttribute('data-url')
+          window.location.href = url
+    
+          this.classList.add('clicked')
+    
+          setTimeout(() => {
+            this.classList.remove('clicked')
+          }, 300)
+        })
+      })
+    })
+  </script>
+</html>

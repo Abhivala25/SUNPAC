@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'payout_success.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    
+        <div class="container">
+            <div class="card">
+                <img src="{% static 'logo/payment.svg' %}" alt="">
+                <h1>Your Payment <br>
+                    Was Successfully!
+                </h1>
+                <h2>Thank You! Your payement<br>has been recieved..</h2>
+                <button class="order-btn2" data-url="{% url 'success' %}">Done</button>
+            </div>
+        </div>    
+   
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hlinks = document.querySelectorAll(".order-btn2");
+        
+        
+        
+                hlinks.forEach(link => {
+                    link.addEventListener("click", function () {
+                        const url = this.getAttribute('data-url');
+                        window.location.href = url
+        
+                        this.classList.add('clicked');
+        
+                        setTimeout(() => {
+                            this.classList.remove('clicked');
+                        }, 300);
+                    })
+                });
+             });
+            </script>
+</body>
+</html>

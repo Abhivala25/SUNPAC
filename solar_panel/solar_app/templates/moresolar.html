@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'moresolar.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="main2">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class="sunpac" data-url="{% url 'home2' %}">
+            <div class="header">
+                <div class="nav2">
+                    <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                    <h4 class="products" data-url="{% url 'gridview' %}">Products
+                        {% comment %} <ul class="popup">
+                            <li>Solar Panel</li>
+                            <li>Inverters</li>
+                            <li>Solar Cooker</li>
+                            <li>Solar Heater</li>
+                        </ul> {% endcomment %}
+                    </h4>
+                    <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+                    <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+                </div>
+                    <button class="button" data-url="/insert2/">Lists</button>
+                    <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile" data-url="{% url 'profilepage' %}">
+                    <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}">
+                     
+            </div>
+        </div>
+
+    <div class="pro">
+        <div class="hey">
+                <img src="{% static 'logo/solar1.svg' %}" alt="" class="updown4 animation"> 
+            <div class="div">
+                <h1>Sunlight to Power</h1>
+            </div>
+        </div>
+        <div class="fine">
+            <h3>Photovoltaic Cells</h3>
+            <p>Photovoltaic cells are semiconductor devices<br>that directly convert sunlight into electricity<br>through the photovoltaic effect. These cells<br>are typically made of crystalline silicon,<br>though other materials like thin-film technology<br>may also be employed.</p>
+        
+        </div>
+    </div>
+
+    <div class="true">
+        <div class="yes">
+            <h3>Sunlight Sparks Electric Current in PV Cells<br></h3>
+            <p>When sunlight, which is composed of photons,<br>strikes the surface of the PV cells, it excites<br>the electrons within the semiconductor material.<br>This energy absorption causes the electrons to move,<br>creating an electric current.</p>
+        </div>
+        <div class="no">
+            <img src="{% static 'logo/solarorange.svg' %}" alt="" class="updown4 animation"> 
+               <h1> Absorption of Sunlight</h1>
+                   
+        </div>
+    </div>
+
+    <div class="energy">
+        <div class="clean">
+            <img src="{% static 'logo/morehome1.svg' %}" alt="" class="updown4 animation"> 
+            <div class="green">
+                <h1>Powerful Solar Cells</h1>
+            </div>
+        </div>
+        <div class="get">
+            <h3>Solar Cells Amplifying Power</h3>
+            <p>As the excited electrons move within the<br>semiconductor material, they generate a<br>flow of direct current (DC) electricity.<br>The DC electricity produced by individual cells<br>is relatively low, so multiple cells are<br>interconnected within a solar panel to enhance<br>the overall power output.</p>
+        </div>
+    </div>
+
+    {% comment %} <div class="bright">    
+        <div class="future">
+            <h3>Future Brighter<br></h3>
+            <p>Choosing Sunpac means embracing a brighter, more<br>sustainable tomorrow. Our dedication to solar<br>energy reflects our belief in a cleaner,<br>greener, and smarter future. Join us in this<br>journey towards a world powered by the sun,<br>where clean energy empowers communities and<br>illuminates a path to a more sustainable and<br>eco-friendly existence.</p>
+        </div>
+        <div class="light">
+            <img src="{% static 'logo/happysolar.svg' %}" alt="" class="updown4 animation"> 
+               <h1>Future Brighter</h1>
+                   
+        </div>
+    </div> {% endcomment %}
+        
+    <div class="div2">
+        <div class="title2">
+            <h1>Warranty</h1>
+            <h2>25-year performance guarantee</h2>
+        </div>
+
+        <div class="logo2">
+            <img src="{% static 'logo/logo2.svg' %}" alt="">
+            <h1>Solar Power Your Home</h1>
+            <button class="order-btn2" data-url="/gridview">Order now</button>
+        </div>
+    
+        <div class="footer">
+            <h4>Sunpac @ 2023</h4>
+            <h4 class="nav-link" data-url="{% url 'privacy' %}">Privacy & legal</h4>
+            <h4 class="nav-link" data-url="{% url 'contactus' %}">contact</h4>
+            <h4 class="nav-link" data-url="{% url 'blog_page' %}">guide</h4>
+            <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About</h4>
+        </div>
+    </div>  
+   
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll(".sunpac, .products,.button ,.nav-link, .nav-link, .order-btn2 , .profile, .cart, .order-btn");
+
+
+
+        hlinks.forEach(link => {
+            link.addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.location.href = url
+
+                this.classList.add('clicked');
+
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            })
+        });
+     });
+    </script>
+   
+</div>

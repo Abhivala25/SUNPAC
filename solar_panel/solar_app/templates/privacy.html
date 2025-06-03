@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'privacy.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" class="sunpac" data-url="{% url 'home2' %}" />
+        <div class="header">
+          <div class="nav2">
+            <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+            <h4 class="products" data-url="{% url 'gridview' %}">
+              Products{% comment %} <ul class="popup">
+                <li>Solar Panel</li>
+                <li>Inverters</li>
+                <li>Solar Cooker</li>
+                <li>Solar Heater</li>
+              </ul> {% endcomment %}
+            </h4>
+            <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+            <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+          </div>
+          <button class="button" data-url="/insert2/">Lists</button>
+          <img src="{% static 'logo/profile.svg' %}" alt="" class="profile" data-url="{% url 'profilepage' %}" />
+          <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}" />
+        </div>
+      </div>
+      <div class="para1">
+        <h1>Privacy Policy</h1>
+        <p>At SunPac, we take your privacy seriously. Any personal information collected through our website, such as name, email address, or payment details, is securely stored and used solely for the purpose of processing your orders and improving your shopping experience. We do not share your information with third parties unless necessary for order fulfillment or as required by law. By using our website, you consent to the collection and use of your personal information as outlined in this Privacy Policy.</p>
+      </div>
+      <div class="para1">
+        <h1>Legal Disclaimer</h1>
+        <p>The information provided on the SunPac website is for general informational purposes only. While we strive to ensure the accuracy and reliability of the content, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website. Through this website, you may be able to link to other websites that are not under the control of SunPac. We have no control over the nature, content, and availability of those sites. The inclusion of any links does</p>
+      </div>
+    </div>
+    <div class="div">
+      <div class="title2">
+        <h1>Warranty</h1>
+        <h2>25-year performance guarantee</h2>
+      </div>
+
+      <div class="logo2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" />
+        <h1>Solar Power Your Home</h1>
+        <button class="order-btn4" data-url="{% url 'gridview' %}">Order now</button>
+      </div>
+
+      <div class="footer">
+        <h4>Sunpac @ 2023</h4>
+        <h4 >Privacy & legal</h4>
+        <h4 class="products" data-url="{% url 'blog_page' %}">contact</h4>
+        <h4 class="products" data-url="{% url 'blog_page' %}">guide</h4>
+        <h4 class="products" data-url="{% url 'aboutus_page' %}">About</h4>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll(".products,.button ,.cart, .profile, .nav-link, .nav-link,.order-btn2, .order-btn, .solar_panel, .inveter, .solar_heater, .solar_cooker");
+
+
+
+        hlinks.forEach(link => {
+            link.addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.location.href = url
+
+                this.classList.add('clicked');
+
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            })
+        });
+     });
+    </script>
+</html>

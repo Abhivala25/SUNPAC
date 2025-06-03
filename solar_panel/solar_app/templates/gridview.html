@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'gridview.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="main2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" class="sunpac" data-url="{% url 'home2' %}"/>
+        <div class="header">
+          <div class="nav2">
+            <h4 class="nav-link" data-url="{% url 'home2' %}">Home</h4>
+            <h4 class="products" data-url="{% url 'gridview' %}">Products
+              {% comment %} <ul class="popup">
+                <li class="solar_panel" data-url="gridview/?csrfmiddlewaretoken=czuSld1GbAzyjLNn0LIaNeBPRYKJhtHKQFYXhVGa0oLsUzm1Koavcb66NPA3wxsC&product-group=4">Solar Panel</li>
+                <li class="inveter" data-url="gridview/?csrfmiddlewaretoken=A5uilEkmywHpPKIxdtxkY9KhDh7MVU9EebYnhmZQnkTjqyhbX6ZFn6fyz8X6aYUw&product-group=5">Inverters</li>
+                <li class="solar_heater" data-url="gridview/?csrfmiddlewaretoken=y46K3XzOVXS46G4lW7RIzZnVQudL2Z0wcaAPZFeiKL4YHuDZGKj3YWScMl35h3Lo&product-group=7">Solar Cooker</li>
+                <li class="solar_cooker" data-url="gridview/?csrfmiddlewaretoken=rNEh22GyBMpS96UQfqxd6u8MstaP7AFJ5T8mYKl2qABMKUtuZ3ZyvrD3ok09mEqB&product-group=6">Solar Heater</li>
+              </ul> {% endcomment %}
+            </h4>
+            <h4 class="products" data-url="{% url 'blog_page' %}">Blog</h4>
+            <h4 class="products" data-url="{% url 'aboutus_page' %}">About us</h4>
+          </div>
+          <div class="search">
+            <form action="{% url 'gridview' %}" method="GET">
+              <input type="text" name="q" placeholder="Search by title..." />
+
+              {% comment %} <button type="submit">Search</button> {% endcomment %}
+            </form>
+          </div>
+
+          <button class="button" data-url="/insert2">Lists</button>
+          <img src="{% static 'logo/profile.svg' %}" alt="" class="profile" data-url="/profilepage/"/>
+          <img src="{% static 'logo/cart.svg' %}" alt="" class="cart" data-url="{% url 'success' %}"/>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left">
+          <form method="GET" action="{% url 'gridview' %}">
+            {% csrf_token %}
+            <div class="filter">
+              <h2>SORT & FILTER</h2>
+            </div>
+            <div class="price">
+              <h2>PRICE</h2>
+              <div class="radio-group">
+                <input type="radio" id="radio1" name="price-group" class="radio-input" value="1"/>
+                <label for="radio1" class="radio-label">
+                  <span class="radio-inner-circle"></span>
+                  10K - 100K
+                </label>
+
+                <input type="radio" id="radio2" name="price-group" class="radio-input" value="2"/>
+                <label for="radio2" class="radio-label">
+                  <span class="radio-inner-circle"></span>
+                  100k - 200k
+                </label>
+
+                <input type="radio" id="radio3" name="price-group" class="radio-input" value="3"/>
+                <label for="radio3" class="radio-label">
+                  <span class="radio-inner-circle"></span>
+                  200k - 300k
+                </label>
+              </div>
+            </div>
+            <div class="product">
+              <h2>PRODUCTS</h2>
+              <div class="product-group">
+                <input type="radio" id="radio4" name="product-group" class="product-input" value="4"/>
+                <label for="radio4" class="product-label">
+                  <span class="product-inner-circle"></span>
+                  Solar Panels
+                </label>
+
+                <input type="radio" id="radio5" name="product-group" class="product-input" value="5"/>
+                <label for="radio5" class="product-label">
+                  <span class="product-inner-circle"></span>
+                  Inveters
+                </label>
+
+                <input type="radio" id="radio6" name="product-group" class="product-input" value="6"/>
+                <label for="radio6" class="product-label">
+                  <span class="product-inner-circle"></span>
+                  Solar Heaters
+                </label>
+
+                <input type="radio" id="radio7" name="product-group" class="product-input" value="7"/>
+                <label for="radio7" class="product-label">
+                  <span class="product-inner-circle"></span>
+                  Solar Cookers
+                </label>
+              </div>
+            </div>
+            <div class="brand">
+              <h2>BRAND</h2>
+              <div class="brand-group">
+                <input type="radio" id="radio8" name="brand-group" class="brand-input" value="8"/>
+                <label for="radio8" class="brand-label">
+                  <span class="brand-inner-circle"></span>
+                  Luminous
+                </label>
+
+                <input type="radio" id="radio9" name="brand-group" class="brand-input" value="9"/>
+                <label for="radio9" class="brand-label">
+                  <span class="brand-inner-circle"></span>
+                  Loom
+                </label>
+
+                <input type="radio" id="radio10" name="brand-group" class="brand-input" value="10"/>
+                <label for="radio10" class="brand-label">
+                  <span class="brand-inner-circle"></span>
+                  Hi-Mo
+                </label>
+              </div>
+            </div>
+            <div class="dis">
+              <h2>Discount</h2>
+              <div class="dis-group">
+                <input type="radio" id="radio11" name="discount-group" class="dis-input" value="11"/>
+                <label for="radio11" class="dis-label">
+                  <span class="dis-inner-circle"></span>
+                  10% Discount
+                </label>
+
+                <input type="radio" id="radio12" name="discount-group" class="dis-input" value="12"/>
+                <label for="radio12" class="dis-label">
+                  <span class="dis-inner-circle"></span>
+                  20% Discount
+                </label>
+
+                <input type="radio" id="radio13" name="discount-group" class="dis-input" value="13"/>
+                <label for="radio13" class="dis-label">
+                  <span class="dis-inner-circle"></span>
+                  30% Discount
+                </label>
+              </div>
+            </div>
+            <button class="order-btn" data-url="/insert2">Apply Filters</button>
+            <button class="order-btn1 btn-reset" data-url="gridview">Reset</button>
+          </form>
+        </div>
+        <div class="right">
+         {% comment %} <div class="bell-icon-container">
+            <span class="bell-icon">&#128276;</span>
+            <span class="bell-icon-circle"></span>
+          </div>  {% endcomment %}
+          <div class="title3">
+            <h2>For Your Product</h2>
+            <div class="line"></div>
+          </div>
+          <div class="cards">
+            {% for category in categories %}
+              <div class="card1 nav-product" data-url="{% url 'productpage' category.id %}">
+                <img class="cimg" src="{{ category.pimg.url }}" alt="{{ category.title }}" />
+                <h3 class="title">{{ category.title }}</h3>
+                <h3 class="price1">₹ {{ category.price }}</h3>
+                <h4>view details ></h4>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="div2">
+            <div class="title2">
+                <h1>Warranty</h1>
+                <h2>25-year performance guarantee</h2>
+            </div>
+      
+            <div class="logo2">
+                <img src="{% static 'logo/logo2.svg' %}" alt="">
+                <h1>Solar Power Your Home</h1>
+                <button class="order-btn2" data-url="{% url 'gridview' %}">Order now</button>
+            </div>
+        
+            <div class="footer">
+                <h4>Sunpac @ 2023</h4>
+                <h4>Privacy & legal</h4>
+                <h4>contact</h4>
+                <h4 class="products" data-url="{% url 'blog_page' %}">guide</h4>
+                <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About</h4>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script>
+      
+      
+      document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll('.sunpac, .products,.button ,.nav-link, .nav-link, .order-btn, .order-btn2 , .nav-product ,.btn-reset , .profile, .cart')
+      
+        hlinks.forEach((link) => {
+          link.addEventListener('click', function () {
+            const url = this.getAttribute('data-url')
+            window.location.href = url
+      
+            this.classList.add('clicked')
+      
+            setTimeout(() => {
+              this.classList.remove('clicked')
+            }, 300)
+          })
+        })
+      })
+    </script>
+  </body>
+</html>

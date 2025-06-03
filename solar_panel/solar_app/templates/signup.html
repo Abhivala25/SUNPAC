@@ -1,0 +1,92 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+{% load static %}
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'signup.css' %}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="img">
+    <img src="{% static 'logo/signup.svg' %}" alt="fff" class="image">
+    <h2>WELCOME</h2>
+    <p>light up  <span>your home</span>,
+        lighten your bills.<br></p>
+    <h4><span>go solar </span> , go smart!!</p>
+</div>
+ <div class="main"> 
+  <div class="container">
+    <div class="title">Sign up</div>
+    <div class="content">
+      <form method='POST' action="#">
+        {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" name="phone_number" id="r-phone" pattern="[0-9+]*$" 
+                                        inputmode="numeric" placeholder="10-digit mobile" maxlength="15" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" name="city" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="address" placeholder="Enter your address" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Sign up">
+        </div>
+        <div class="links">
+          <h4 class="login" data-url="{% url 'login' %}">Already have an Account?</h4>
+            {% comment %} <a href="{% url 'login' %}">Login</a> {% endcomment %}
+        </div>
+      </form>
+    </div>
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+        <li>{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+      </ul>
+   {% endif %}
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hlinks = document.querySelectorAll(".login,.button ,.nav-link, .nav-link, .order-btn2 ,.sunpac, .cart, .profile, .order-btn");
+
+
+
+      hlinks.forEach(link => {
+          link.addEventListener("click", function () {
+              const url = this.getAttribute('data-url');
+              window.location.href = url
+
+              this.classList.add('clicked');
+
+              setTimeout(() => {
+                  this.classList.remove('clicked');
+              }, 300);
+          })
+      });
+   });
+  </script>
+ 
+</body>
+</html>

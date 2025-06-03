@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static 'admin_invoice.css' %}" />
+    <title>Admin Invoice Records</title>
+</head>
+<body>
+  <div class="main">
+    <div class="leftt">
+        <div class="button">
+            <img src="{% static 'logo/logo2.svg' %}" alt="" class="profile" />
+            <a href="/adminpage/"><input type="submit" value="Insert product" /></a>
+            <a href="/admin_user/"><input type="submit" value="User Records" /></a>
+            <a href="/admin_category/"><input type="submit" value="Product Records" /></a>
+            <a href="/admin_invoice/"><input type="submit" value="Invoice Records" /></a>
+        </div>
+    </div>
+
+    <div class="category">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Invoice ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Discount 10%</th>
+                    <th>Discount 20%</th>
+                    <th>Discount 30%</th>
+                    <th>GSTIN</th>
+                    <th>Total</th>
+                    <th>Arrival Time</th>
+                    <th>Status</th>
+                    <th>
+                        <form method="POST" action="{% url 'reset_invoice' %}">
+                            {% csrf_token %}
+                            <button type="submit" name="btn_reset">Reset</button>
+                        </form>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for invoice in invoice_list %}
+                <form method="POST" action="{% url 'delete_invoice' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="invoice_id" value="{{ invoice.id }}" />
+                    <tr>
+                        <td>{{ invoice.invoice_id }}</td>
+                        <td>{{ invoice.date }}</td>
+                        <td>{{ invoice.time }}</td>
+                        <td>{{ invoice.name }}</td>
+                        <td>{{ invoice.phone }}</td>
+                        <td>{{ invoice.city }}</td>
+                        <td>{{ invoice.address }}</td>
+                        <td>{{ invoice.title }}</td>
+                        <td>{{ invoice.price }}</td>
+                        <td>{% if invoice.discount_10 %}Yes{% else %}No{% endif %}</td>
+                        <td>{% if invoice.discount_20 %}Yes{% else %}No{% endif %}</td>
+                        <td>{% if invoice.discount_30 %}Yes{% else %}No{% endif %}</td>
+                        <td>{{ invoice.gstin }}</td>
+                        <td>{{ invoice.total }}</td>
+                        <td>{{ invoice.arrival_time }}</td>
+                        <td>{{ invoice.status }}</td>
+                        <td><button type="submit" name="btn">Delete</button></td>
+                    </tr>
+                </form>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+  </div>
+</body>
+</html>

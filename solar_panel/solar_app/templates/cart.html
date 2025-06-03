@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cart.css' %}" />
+    <title>Your Page Title</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nav2">
+          <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+          <h4 class="products" data-url="{% url 'gridview' %}">
+            Products
+              {% comment %} <li>Solar Panel</li>
+              <li>Inverters</li>
+              <li>Solar Cooker</li>
+              <li>Solar Heater</li>
+            </ul> {% endcomment %}
+          </h4>
+          <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+          <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="parent">
+          <div class="round">
+              <img src="{% static 'logo/proimage.svg' %}" alt="" class="profile">
+              <div class="button">
+                <input type="submit" value="Edit Profile" class="profile1" data-url="{% url 'profilepage' %}">
+                <input type="submit" value="Ordered item" class="order" data-url="{% url 'ordered_item' %}">
+                <input type="submit" value="My Cart" class="order" data-url="{% url 'cart' %}">
+                <input type="submit" value="Logout" class="logout" data-url="{% url 'logout' %}">
+              </div>
+            </div>
+          </div>
+           <div class="carts">
+            <form method="POST" action="">
+              {% csrf_token %}
+              <button type="submit">Clear</button>
+            </form>
+            <div class="cart">
+                {% for c in carts %}
+                    <div class="card1 nav-product" data-url="{% url 'productpage' c.id %}">
+                        <img class="cimg" src="{{ c.pimg.url }}" alt="{{ c.title }}" />
+                        <h3 class="title">{{ c.title }}</h3>
+                        <h3 class="price1">₹ {{ c.price }}</h3>
+                        {% comment %} <a href="{% url 'payment_page' c.id %}?price={{ c.price }}" class="order1">Order now</a> {% endcomment %}
+                {% comment %} <h4>view details ></h4> {% endcomment %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hlinks = document.querySelectorAll('.order,.profile1,.nav-product,.products,.nav-link, .nav-link, .order-btn, .logout')
+    
+      hlinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          const url = this.getAttribute('data-url')
+          window.location.href = url
+    
+          this.classList.add('clicked')
+    
+          setTimeout(() => {
+            this.classList.remove('clicked')
+          }, 300)
+        })
+      })
+    })
+  </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'user_list.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="main2">
+        <img src="{% static 'logo/logo2.svg' %}" alt="" class ="sunpac" data-url="{% url 'home2' %}">
+        <div class="header">
+            <div class="nav2">
+                <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+                <h4 class="products">Products
+                    {% comment %} <ul class="popup">
+                        <li><input type="checkbox" name="product_name" value="Solar Panel"> Solar Panel</li>
+                        <li><input type="checkbox" name="product_name" value="Inverters"> Inverters</li>
+                        <li><input type="checkbox" name="product_name" value="Solar Cooker"> Solar Cooker</li>
+                        <li><input type="checkbox" name="product_name" value="Solar Heater"> Solar Heater</li>
+                    </ul> {% endcomment %}
+                </h4>
+                <h4>Blog</h4>
+                <h4>About us</h4>
+            </div>
+            <button class="button">Lists</button> 
+            <img src="{% static 'logo/profile.svg' %}" alt="" class= "profile">
+            <img src="{% static 'logo/cart.svg' %}" alt="" class="cart">
+        </div>
+    </div>
+    <div class="text">
+        <h2>User Products<span> List </span></h2>
+        <div class="line"></div>
+    </div>
+    <div class="right">
+        <div class="cards">
+          {% for category in categories %}
+            <div class="card1 nav-product" data-url="{% url 'productpage' category.id %}">
+              <img class="cimg" src="{{ category.pimg.url }}" alt="{{ category.title }}" />
+              <h3 class="title">{{ category.title }}</h3>
+              <h3 class="price1">₹ {{ category.price }}</h3>
+              <h4>view details ></h4>
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+    <div class="div2">
+        <div class="title2">
+            <h1>Warranty</h1>
+            <h2>25-year performance guarantee</h2>
+        </div>
+
+        <div class="logo2">
+            <img src="{% static 'logo/logo2.svg' %}" alt="">
+            <h1>Solar Power Your Home</h1>
+            <button class="order-btn2" data-url="/gridview">Order now</button>
+        </div>
+    
+        <div class="footer">
+            <h4>Sunpac @ 2023</h4>
+            <h4>Privacy & legal</h4>
+            <h4>contact</h4>
+            <h4>guide</h4>
+            <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About</h4>
+        </div>
+    </div>  
+   
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hlinks = document.querySelectorAll(".sunpac,.button ,.nav-link, .nav-link, .order-btn2, .sunpac, .profile, .cart, .order-btn");
+
+
+
+        hlinks.forEach(link => {
+            link.addEventListener("click", function () {
+                const url = this.getAttribute('data-url');
+                window.location.href = url
+
+                this.classList.add('clicked');
+
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            })
+        });
+     });
+    </script>
+
+</div>
+</body>
+</html>

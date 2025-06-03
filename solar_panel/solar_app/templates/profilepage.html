@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'profilepage.css' %}" />
+    <title>Your Page Title</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nav2">
+          <h4 class="nav-link" data-url="{% url 'home2' %}">home</h4>
+          <h4 class="products" data-url="{% url 'gridview' %}">
+            Products
+              {% comment %} <li>Solar Panel</li>
+              <li>Inverters</li>
+              <li>Solar Cooker</li>
+              <li>Solar Heater</li>
+            </ul> {% endcomment %}
+          </h4>
+          <h4 class="nav-link" data-url="{% url 'blog_page' %}">Blog</h4>
+          <h4 class="nav-link" data-url="{% url 'aboutus_page' %}">About us</h4>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="parent">
+          <div class="round">
+              <img src="{% static 'logo/proimage.svg' %}" alt="" class="profile">
+              <div class="button">
+                <input type="submit" value="Edit Profile">
+                <input type="submit" value="Ordered item" class="order" data-url="{% url 'ordered_item' %}">
+                <input type="submit" value="My Cart" class="cart2" data-url="{% url 'cart' %}">
+                <input type="submit" value="Logout" class="logout" data-url="{% url 'logout' %}">
+              </div>
+            </div>
+          </div>
+        
+        <div class="content">
+            <form method='POST' action="#">
+            {% csrf_token %}
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="name" placeholder="Enter your name" value="{{ user_data.name }}" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" name="email" placeholder="Enter your email" value="{{ user_data.email }}" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="number" name="phone_number" placeholder="Enter your number" value="{{ user_data.phone_number }}" required>
+                </div>
+                <div class="input-box">
+                <span class="details">City</span>
+                <input type="text" name="city" placeholder="Enter your city" value="{{ user_data.city }}" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" name="address" placeholder="Enter your address" value="{{ user_data.address }}" required>
+                </div>
+                <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" name="password" placeholder="Enter your password" value="{{ user_data.password }}" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Save">
+                </div>
+            </div>    
+        </form> 
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hlinks = document.querySelectorAll('.order, .products, .cart2, .nav-product, .products, .nav-link, .nav-link, .order-btn, .logout')
+    
+      hlinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          const url = this.getAttribute('data-url')
+          window.location.href = url
+    
+          this.classList.add('clicked')
+    
+          setTimeout(() => {
+            this.classList.remove('clicked')
+          }, 300)
+        })
+      })
+    })
+  </script>
+</html>
